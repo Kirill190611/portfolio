@@ -19,7 +19,7 @@ export const Main = () => {
 
                 <Photo src={photo} alt={"It's me"}/>
             </FlexWrapper>
-            <FlexWrapper justify={"space-between"} direction={"column"}>
+            <FlexWrapper justify={"space-between"} direction={"column"} gap={"40px"}>
                 <About/>
                 <WorkExperience/>
                 <Education/>

@@ -15,4 +15,6 @@ const StyledSecondTitle = styled.h2`
     line-height: 52px;
     font-weight: 700;
     color: rgba(66, 68, 110, 1);
+    margin: 0 0 40px 0;
+    padding: 0;
 `

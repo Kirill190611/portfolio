@@ -1,6 +1,7 @@
 import React from 'react';
 import {SecondTitle} from "../../../components/titles/SecondTitle";
 import {AboutDescription} from "../../../components/descriptions/AboutDescription";
+import styled from "styled-components";
 
 export const About = () => {
     return (
@@ -10,7 +11,3 @@ export const About = () => {
         </div>
     );
 };
-
-
-
-
