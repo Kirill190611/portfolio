@@ -2,17 +2,30 @@ import React from 'react';
 import styled from "styled-components";
 import photo from "./../../../assets/images/photo.jpg"
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {About} from "../about/About";
+import {MainTitle} from "../../../components/titles/MainTitle";
+import {WorkExperience} from "../experience/WorkExperience";
+import {Education} from "../education/Education";
+import {Skills} from "../skills/Skills";
 
 export const Main = () => {
     return (
-        <FlexWrapper justify={"space-between"} align={"center"}>
-            <div>
-                <MainText>Hi There, <br/> I am <span>Kirill Soldatov</span></MainText>
-                <MainTitle>A Web developer.</MainTitle>
-            </div>
+        <div>
+            <FlexWrapper justify={"space-between"} align={"center"}>
+                <div>
+                    <MainText>Hi There, <br/> I am <span>Kirill Soldatov</span></MainText>
+                    <MainTitle>A Web developer.</MainTitle>
+                </div>
 
-            <Photo src={photo} alt={"It's me"}/>
-        </FlexWrapper>
+                <Photo src={photo} alt={"It's me"}/>
+            </FlexWrapper>
+            <FlexWrapper justify={"space-between"} direction={"column"}>
+                <About/>
+                <WorkExperience/>
+                <Education/>
+                <Skills/>
+            </FlexWrapper>
+        </div>
     );
 };
 
@@ -30,15 +43,9 @@ const MainText = styled.p`
     font-size: 58px;
     line-height: 70px;
     font-weight: 700;
-    
+
     span {
         color: #4800fd;
     }
 `
 
-const MainTitle = styled.h1`
-    color: rgba(66, 68, 110, 1);
-    font-size: 58px;
-    line-height: 70px;
-    font-weight: 700;
-`
