@@ -7,6 +7,7 @@ import {MainTitle} from "../../../components/titles/MainTitle";
 import {WorkExperience} from "../experience/WorkExperience";
 import {Education} from "../education/Education";
 import {Skills} from "../skills/Skills";
+import {Projects} from "../projects/Projects";
 
 export const Main = () => {
     return (
@@ -24,6 +25,7 @@ export const Main = () => {
                 <WorkExperience/>
                 <Education/>
                 <Skills/>
+                <Projects/>
             </FlexWrapper>
         </div>
     );

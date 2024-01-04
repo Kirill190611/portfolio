@@ -18,10 +18,10 @@ export const Skills = () => {
                     <SkillsIcon iconId={'cssIcon'}/>
                 </StyledSkillsWrapper>
                 <StyledSkillsWrapper>
-                    <SkillsIcon iconId={'jsIcon'} viewBox={"0 0 120 120"}/>
+                    <SkillsIcon iconId={'jsIcon'} viewBox={"7 7 105 105"}/>
                 </StyledSkillsWrapper>
                 <StyledSkillsWrapper>
-                    <SkillsIcon iconId={'reactIcon'}/>
+                    <SkillsIcon iconId={'reactIcon'} viewBox={"0 0 113 100"}/>
                 </StyledSkillsWrapper>
                 <StyledSkillsWrapper>
                     <SkillsIcon iconId={'sassIcon'}/>
