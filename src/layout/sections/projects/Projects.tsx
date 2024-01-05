@@ -101,8 +101,8 @@ export const Projects = () => {
 const StyledProjectsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
     gap: 62px 34px;
 `
 

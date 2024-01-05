@@ -8,6 +8,7 @@ import {WorkExperience} from "../experience/WorkExperience";
 import {Education} from "../education/Education";
 import {Skills} from "../skills/Skills";
 import {Projects} from "../projects/Projects";
+import {Contact} from "../contact/Contact";
 
 export const Main = () => {
     return (
@@ -26,6 +27,7 @@ export const Main = () => {
                 <Education/>
                 <Skills/>
                 <Projects/>
+                <Contact/>
             </FlexWrapper>
         </div>
     );
