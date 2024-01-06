@@ -25,7 +25,7 @@ export const Footer = () => {
     );
 };
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
     display: flex;
     justify-content: space-between;
     flex-direction: column;

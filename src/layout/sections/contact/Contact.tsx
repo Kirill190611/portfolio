@@ -5,9 +5,11 @@ import {ContactMail} from "../../../components/contacts/ContactMail";
 
 export const Contact = () => {
     return (
-        <FlexWrapper justify={"center"} align={"center"} direction={"column"}>
-            <ContactDescription/>
-            <ContactMail/>
-        </FlexWrapper>
+        <section>
+            <FlexWrapper justify={"center"} align={"center"} direction={"column"}>
+                <ContactDescription/>
+                <ContactMail/>
+            </FlexWrapper>
+        </section>
     );
 };

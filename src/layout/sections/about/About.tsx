@@ -5,9 +5,9 @@ import styled from "styled-components";
 
 export const About = () => {
     return (
-        <div>
+        <section>
             <SecondTitle title={"About Me"}/>
             <AboutDescription content={"(Need to change)The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS."}/>
-        </div>
+        </section>
     );
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 import {SecondTitle} from "../../../components/titles/SecondTitle";
-import {StyledList} from "../../../components/lists/StyledList";
 import {StyledListItem} from "../../../components/lists/StyledListIem";
 import {ThirdTitle} from "../../../components/titles/ThirdTitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
@@ -8,10 +7,11 @@ import {WorkCompany} from "../../../components/descriptions/WorkCompany";
 import {WorkPlace} from "../../../components/descriptions/WorkPlace";
 import {WorkTime} from "../../../components/descriptions/WorkTime";
 import {WorkPeriod} from "../../../components/descriptions/WorkPeriod";
+import {StyledList} from "../../../components/lists/StyledList";
 
 export const Education = () => {
     return (
-        <div>
+        <section>
             <SecondTitle title={"Education"}/>
             <StyledList>
                 <StyledListItem>
@@ -41,6 +41,6 @@ export const Education = () => {
                     </FlexWrapper>
                 </StyledListItem>
             </StyledList>
-        </div>
+        </section>
     );
 };

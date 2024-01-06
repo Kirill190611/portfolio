@@ -17,84 +17,86 @@ import {StyledButtonsProject} from "../../../components/buttons/StyledButtonsPro
 
 export const Projects = () => {
     return (
-        <FlexWrapper direction={"column"} justify={"space-between"} align={"center"}>
-            <SecondTitle title={"Projects"}/>
-            <MainDescription description={"Things I’ve built so far"}/>
-            <StyledProjectsContainer>
-                <StyledProjectWrapper>
-                    <ProjectImage src={photo1} alt={"Project 1"}/>
-                    <StyledDescriptionWrapper>
-                        <ProjectTitle title={"Project 1"}/>
-                        <ProjectDescription description={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <ProjectStackDescription stack={"HTML , JavaScript, TS, React"}/>
-                        <StyledButtonsWrapper>
-                            <StyledButtonsProject href={"#"}>Live Preview</StyledButtonsProject>
-                            <StyledButtonsProject href={"#"}>View Code</StyledButtonsProject>
-                        </StyledButtonsWrapper>
-                    </StyledDescriptionWrapper>
-                </StyledProjectWrapper>
-                <StyledProjectWrapper>
-                    <ProjectImage src={photo2} alt={"Project 2"}/>
-                    <StyledDescriptionWrapper>
-                        <ProjectTitle title={"Project 2"}/>
-                        <ProjectDescription description={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <ProjectStackDescription stack={"HTML , JavaScript, TS, React"}/>
-                        <StyledButtonsWrapper>
-                            <StyledButtonsProject href={"#"}>Live Preview</StyledButtonsProject>
-                            <StyledButtonsProject href={"#"}>View Code</StyledButtonsProject>
-                        </StyledButtonsWrapper>
-                    </StyledDescriptionWrapper>
-                </StyledProjectWrapper>
-                <StyledProjectWrapper>
-                    <ProjectImage src={photo3} alt={"Project 3"}/>
-                    <StyledDescriptionWrapper>
-                        <ProjectTitle title={"Project 3"}/>
-                        <ProjectDescription description={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <ProjectStackDescription stack={"HTML , JavaScript, TS, React"}/>
-                        <StyledButtonsWrapper>
-                            <StyledButtonsProject href={"#"}>Live Preview</StyledButtonsProject>
-                            <StyledButtonsProject href={"#"}>View Code</StyledButtonsProject>
-                        </StyledButtonsWrapper>
-                    </StyledDescriptionWrapper>
-                </StyledProjectWrapper>
-                <StyledProjectWrapper>
-                    <ProjectImage src={photo4} alt={"Project 4"}/>
-                    <StyledDescriptionWrapper>
-                        <ProjectTitle title={"Project 4"}/>
-                        <ProjectDescription description={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <ProjectStackDescription stack={"HTML , JavaScript, TS, React"}/>
-                        <StyledButtonsWrapper>
-                            <StyledButtonsProject href={"#"}>Live Preview</StyledButtonsProject>
-                            <StyledButtonsProject href={"#"}>View Code</StyledButtonsProject>
-                        </StyledButtonsWrapper>
-                    </StyledDescriptionWrapper>
-                </StyledProjectWrapper>
-                <StyledProjectWrapper>
-                    <ProjectImage src={photo5} alt={"Project 5"}/>
-                    <StyledDescriptionWrapper>
-                        <ProjectTitle title={"Project 5"}/>
-                        <ProjectDescription description={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <ProjectStackDescription stack={"TS, React"}/>
-                        <StyledButtonsWrapper>
-                            <StyledButtonsProject href={"#"}>Live Preview</StyledButtonsProject>
-                            <StyledButtonsProject href={"#"}>View Code</StyledButtonsProject>
-                        </StyledButtonsWrapper>
-                    </StyledDescriptionWrapper>
-                </StyledProjectWrapper>
-                <StyledProjectWrapper>
-                    <ProjectImage src={photo6} alt={"Project 6"}/>
-                    <StyledDescriptionWrapper>
-                        <ProjectTitle title={"Project 6"}/>
-                        <ProjectDescription description={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
-                        <ProjectStackDescription stack={"HTML , JavaScript, TS, React, Redux"}/>
-                        <StyledButtonsWrapper>
-                            <StyledButtonsProject href={"#"}>Live Preview</StyledButtonsProject>
-                            <StyledButtonsProject href={"#"}>View Code</StyledButtonsProject>
-                        </StyledButtonsWrapper>
-                    </StyledDescriptionWrapper>
-                </StyledProjectWrapper>
-            </StyledProjectsContainer>
-        </FlexWrapper>
+        <section>
+            <FlexWrapper direction={"column"} justify={"space-between"} align={"center"}>
+                <SecondTitle title={"Projects"}/>
+                <MainDescription description={"Things I’ve built so far"}/>
+                <StyledProjectsContainer>
+                    <StyledProjectWrapper>
+                        <ProjectImage src={photo1} alt={"Project 1"}/>
+                        <StyledDescriptionWrapper>
+                            <ProjectTitle title={"Project 1"}/>
+                            <ProjectDescription description={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <ProjectStackDescription stack={"HTML , JavaScript, TS, React"}/>
+                            <StyledButtonsWrapper>
+                                <StyledButtonsProject href={"#"}>Live Preview</StyledButtonsProject>
+                                <StyledButtonsProject href={"#"}>View Code</StyledButtonsProject>
+                            </StyledButtonsWrapper>
+                        </StyledDescriptionWrapper>
+                    </StyledProjectWrapper>
+                    <StyledProjectWrapper>
+                        <ProjectImage src={photo2} alt={"Project 2"}/>
+                        <StyledDescriptionWrapper>
+                            <ProjectTitle title={"Project 2"}/>
+                            <ProjectDescription description={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <ProjectStackDescription stack={"HTML , JavaScript, TS, React"}/>
+                            <StyledButtonsWrapper>
+                                <StyledButtonsProject href={"#"}>Live Preview</StyledButtonsProject>
+                                <StyledButtonsProject href={"#"}>View Code</StyledButtonsProject>
+                            </StyledButtonsWrapper>
+                        </StyledDescriptionWrapper>
+                    </StyledProjectWrapper>
+                    <StyledProjectWrapper>
+                        <ProjectImage src={photo3} alt={"Project 3"}/>
+                        <StyledDescriptionWrapper>
+                            <ProjectTitle title={"Project 3"}/>
+                            <ProjectDescription description={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <ProjectStackDescription stack={"HTML , JavaScript, TS, React"}/>
+                            <StyledButtonsWrapper>
+                                <StyledButtonsProject href={"#"}>Live Preview</StyledButtonsProject>
+                                <StyledButtonsProject href={"#"}>View Code</StyledButtonsProject>
+                            </StyledButtonsWrapper>
+                        </StyledDescriptionWrapper>
+                    </StyledProjectWrapper>
+                    <StyledProjectWrapper>
+                        <ProjectImage src={photo4} alt={"Project 4"}/>
+                        <StyledDescriptionWrapper>
+                            <ProjectTitle title={"Project 4"}/>
+                            <ProjectDescription description={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <ProjectStackDescription stack={"HTML , JavaScript, TS, React"}/>
+                            <StyledButtonsWrapper>
+                                <StyledButtonsProject href={"#"}>Live Preview</StyledButtonsProject>
+                                <StyledButtonsProject href={"#"}>View Code</StyledButtonsProject>
+                            </StyledButtonsWrapper>
+                        </StyledDescriptionWrapper>
+                    </StyledProjectWrapper>
+                    <StyledProjectWrapper>
+                        <ProjectImage src={photo5} alt={"Project 5"}/>
+                        <StyledDescriptionWrapper>
+                            <ProjectTitle title={"Project 5"}/>
+                            <ProjectDescription description={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <ProjectStackDescription stack={"TS, React"}/>
+                            <StyledButtonsWrapper>
+                                <StyledButtonsProject href={"#"}>Live Preview</StyledButtonsProject>
+                                <StyledButtonsProject href={"#"}>View Code</StyledButtonsProject>
+                            </StyledButtonsWrapper>
+                        </StyledDescriptionWrapper>
+                    </StyledProjectWrapper>
+                    <StyledProjectWrapper>
+                        <ProjectImage src={photo6} alt={"Project 6"}/>
+                        <StyledDescriptionWrapper>
+                            <ProjectTitle title={"Project 6"}/>
+                            <ProjectDescription description={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}/>
+                            <ProjectStackDescription stack={"HTML , JavaScript, TS, React, Redux"}/>
+                            <StyledButtonsWrapper>
+                                <StyledButtonsProject href={"#"}>Live Preview</StyledButtonsProject>
+                                <StyledButtonsProject href={"#"}>View Code</StyledButtonsProject>
+                            </StyledButtonsWrapper>
+                        </StyledDescriptionWrapper>
+                    </StyledProjectWrapper>
+                </StyledProjectsContainer>
+            </FlexWrapper>
+        </section>
     );
 };
 

@@ -1,18 +1,17 @@
 import React from 'react';
 import {SecondTitle} from "../../../components/titles/SecondTitle";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import styled from "styled-components";
 import {ThirdTitle} from "../../../components/titles/ThirdTitle";
 import {WorkCompany} from "../../../components/descriptions/WorkCompany";
 import {WorkPlace} from "../../../components/descriptions/WorkPlace";
 import {WorkTime} from "../../../components/descriptions/WorkTime";
 import {WorkPeriod} from "../../../components/descriptions/WorkPeriod";
-import {StyledList} from "../../../components/lists/StyledList";
 import {StyledListItem} from "../../../components/lists/StyledListIem";
+import {StyledList} from "../../../components/lists/StyledList";
 
 export const WorkExperience = () => {
     return (
-        <div>
+        <section>
             <SecondTitle title={"Work Experience"}/>
             <StyledList>
                 <StyledListItem>
@@ -55,6 +54,7 @@ export const WorkExperience = () => {
                     </FlexWrapper>
                 </StyledListItem>
             </StyledList>
-        </div>
+        </section>
     );
 };
+
