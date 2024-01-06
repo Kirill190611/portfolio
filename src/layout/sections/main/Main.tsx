@@ -9,6 +9,7 @@ import {Education} from "../education/Education";
 import {Skills} from "../skills/Skills";
 import {Projects} from "../projects/Projects";
 import {Contact} from "../contact/Contact";
+import {Testimony} from "../testimony/Testimony";
 
 export const Main = () => {
     return (
@@ -26,6 +27,7 @@ export const Main = () => {
                 <Education/>
                 <Skills/>
                 <Projects/>
+                <Testimony/>
                 <Contact/>
             </FlexWrapper>
         </div>
