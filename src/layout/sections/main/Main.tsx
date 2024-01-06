@@ -18,7 +18,6 @@ export const Main = () => {
                     <MainText>Hi There, <br/> I am <span>Kirill Soldatov</span></MainText>
                     <MainTitle>A Web developer.</MainTitle>
                 </div>
-
                 <Photo src={photo} alt={"It's me"}/>
             </FlexWrapper>
             <FlexWrapper justify={"space-between"} direction={"column"} gap={"40px"}>

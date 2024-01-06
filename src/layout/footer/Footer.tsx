@@ -8,6 +8,7 @@ import {Social} from "../../components/social/Social";
 import {Menu} from "../../components/menu/Menu";
 import {FooterDev} from "../../components/contacts/FooterDev";
 
+const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
 export const Footer = () => {
     return (
         <StyledFooter>
@@ -18,7 +19,7 @@ export const Footer = () => {
                 <Social/>
             </FlexWrapper>
             <FlexWrapper justify={"space-between"} align={"center"}>
-                <Menu/>
+                <Menu menuItems={items}/>
                 <FooterDev/>
             </FlexWrapper>
         </StyledFooter>

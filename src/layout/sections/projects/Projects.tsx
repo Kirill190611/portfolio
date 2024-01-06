@@ -14,13 +14,16 @@ import {ProjectTitle} from "../../../components/titles/ProjectTitle";
 import {ProjectDescription} from "../../../components/descriptions/ProjectDescription";
 import {ProjectStackDescription} from "../../../components/descriptions/ProjectStackDescription";
 import {StyledButtonsProject} from "../../../components/buttons/StyledButtonsProject";
+import {Menu} from "../../../components/menu/Menu";
 
+const projectsItems = ["All", "Landing page", "React", "SPA"]
 export const Projects = () => {
     return (
         <section>
             <FlexWrapper direction={"column"} justify={"space-between"} align={"center"}>
                 <SecondTitle title={"Projects"}/>
                 <MainDescription description={"Things I’ve built so far"}/>
+                <Menu menuItems={projectsItems}/>
                 <StyledProjectsContainer>
                     <StyledProjectWrapper>
                         <ProjectImage src={photo1} alt={"Project 1"}/>
