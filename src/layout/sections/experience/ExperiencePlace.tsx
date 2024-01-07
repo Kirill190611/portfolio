@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from "styled-components";
 
-type WorkPlacePropsType = {
+type ExperiencePlacePropsType = {
     place: string
 }
-export const WorkPlace = (props: WorkPlacePropsType) => {
+export const ExperiencePlace = (props: ExperiencePlacePropsType) => {
     return (
-        <StyledWorkPlace>{props.place}</StyledWorkPlace>
+        <StyledExperiencePlace>{props.place}</StyledExperiencePlace>
     );
 };
 
-const StyledWorkPlace = styled.span`
+const StyledExperiencePlace = styled.span`
     display: block;
     font-size: 12px;
     line-height: 28px;

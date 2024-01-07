@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {ThirdTitle} from "../../../components/titles/ThirdTitle";
 import {ExperienceCompany} from "./ExperienceCompany";
-import {WorkPlace} from "./WorkPlace";
+import {ExperiencePlace} from "./ExperiencePlace";
 import {ExperienceTime} from "./ExperienceTime";
 import {ExperiencePeriod} from "./ExperiencePeriod";
 
@@ -21,7 +21,7 @@ export const ExperienceListItem = (props: ExperienceListItemPropsType) => {
                 <ThirdTitle title={props.title}/>
                 <FlexWrapper justify={"space-between"}>
                     <ExperienceCompany company={props.company}/>
-                    <WorkPlace place={props.place}/>
+                    <ExperiencePlace place={props.place}/>
                 </FlexWrapper>
             </FlexWrapper>
                 <FlexWrapper justify={"space-between"} align={"start"} direction={"column"}>
