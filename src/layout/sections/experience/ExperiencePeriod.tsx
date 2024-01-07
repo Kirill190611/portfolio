@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from "styled-components";
 
-type WorkPeriodPropsType = {
+type ExperiencePeriodPropsType = {
     period: string
 }
-export const WorkPeriod = (props: WorkPeriodPropsType) => {
+export const ExperiencePeriod = (props: ExperiencePeriodPropsType) => {
     return (
-        <StyledWorkPeriod>{props.period}</StyledWorkPeriod>
+        <StyledExperiencePeriod>{props.period}</StyledExperiencePeriod>
     );
 };
 
-const StyledWorkPeriod = styled.p`
+const StyledExperiencePeriod = styled.p`
     display: block;
     font-size: 12px;
     line-height: 28px;

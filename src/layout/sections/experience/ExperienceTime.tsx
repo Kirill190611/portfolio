@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from "styled-components";
 
-type WorkTimePropsType = {
+type ExperienceTimePropsType = {
     time: string
 }
-export const WorkTime = (props: WorkTimePropsType) => {
+export const ExperienceTime = (props: ExperienceTimePropsType) => {
     return (
-        <StyledWorkTIme>{props.time}</StyledWorkTIme>
+        <StyledExperienceTIme>{props.time}</StyledExperienceTIme>
     );
 };
 
-const StyledWorkTIme = styled.span`
+const StyledExperienceTIme = styled.span`
     display: block;
     font-size: 12px;
     line-height: 28px;

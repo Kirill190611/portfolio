@@ -4,7 +4,7 @@ import photo from "./../../../assets/images/photo.jpg"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {About} from "../about/About";
 import {MainTitle} from "../../../components/titles/MainTitle";
-import {WorkExperience} from "../experience/WorkExperience";
+import {Experience} from "../experience/Experience";
 import {Education} from "../education/Education";
 import {Skills} from "../skills/Skills";
 import {Projects} from "../projects/Projects";
@@ -23,8 +23,8 @@ export const Main = () => {
             </FlexWrapper>
             <FlexWrapper justify={"space-between"} direction={"column"} gap={"40px"}>
                 <About/>
-                <WorkExperience/>
-                <Education/>
+                <Experience/>
+                {/*<Education/>*/}
                 <Skills/>
                 <Projects/>
                 <Testimony/>
@@ -32,6 +32,7 @@ export const Main = () => {
             </FlexWrapper>
         </div>
     );
+
 };
 
 const Photo = styled.img`
