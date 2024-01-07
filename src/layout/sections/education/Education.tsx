@@ -1,46 +1,33 @@
 import React from 'react';
 import {SecondTitle} from "../../../components/titles/SecondTitle";
-import {StyledListItem} from "../../../components/lists/StyledListIem";
-import {ThirdTitle} from "../../../components/titles/ThirdTitle";
-import {FlexWrapper} from "../../../components/FlexWrapper";
-import {WorkCompany} from "../../../components/descriptions/WorkCompany";
-import {WorkPlace} from "../../../components/descriptions/WorkPlace";
-import {WorkTime} from "../../../components/descriptions/WorkTime";
-import {WorkPeriod} from "../../../components/descriptions/WorkPeriod";
-import {StyledList} from "../../../components/lists/StyledList";
+import styled from "styled-components";
+import {EducationItem} from "./EducationItem";
+
 
 export const Education = () => {
     return (
-        <section>
+        <StyledEducation>
             <SecondTitle title={"Education"}/>
-            <StyledList>
-                <StyledListItem>
-                    <FlexWrapper justify={"space-between"} direction={"column"}>
-                        <ThirdTitle title={"Mechatronics and Robotics"}/>
-                        <FlexWrapper justify={"space-between"}>
-                            <WorkCompany company={"Bauman Moscow State Technical University"}/>
-                            <WorkPlace place={"Kaluga"}/>
-                        </FlexWrapper>
-                    </FlexWrapper>
-                    <FlexWrapper justify={"space-between"} align={"start"} direction={"column"}>
-                        <WorkTime time={"Bachelor degree"}/>
-                        <WorkPeriod period={"Sep 2012 - Jun 2016"}/>
-                    </FlexWrapper>
-                </StyledListItem>
-                <StyledListItem>
-                    <FlexWrapper justify={"space-between"} direction={"column"}>
-                        <ThirdTitle title={"Information Systems and Technologies"}/>
-                        <FlexWrapper justify={"space-between"}>
-                            <WorkCompany company={"KGU K.E. Tsiolkovskogo"}/>
-                            <WorkPlace place={"Kaluga"}/>
-                        </FlexWrapper>
-                    </FlexWrapper>
-                    <FlexWrapper justify={"space-between"} align={"start"} direction={"column"}>
-                        <WorkTime time={"Master degree"}/>
-                        <WorkPeriod period={"Sep 2019 - Feb 2021"}/>
-                    </FlexWrapper>
-                </StyledListItem>
-            </StyledList>
-        </section>
+            <StyledEducationList>
+                <EducationItem title={"Mechatronics and Robotics"}
+                               university={"Bauman Moscow State Technical University"}
+                               place={"Kaluga"}
+                               level={"Bachelor Degree"}
+                               period={"Sep 2012 - Jun 2016"}/>
+                <EducationItem title={"Information Systems and Technologies"}
+                               university={"KGU K.E. Tsiolkovskogo"}
+                               place={"Kaluga"} level={"Master degree"}
+                               period={"Sep 2019 - Feb 2021"}/>
+            </StyledEducationList>
+        </StyledEducation>
     );
 };
+
+const StyledEducation = styled.section`
+
+`
+
+const StyledEducationList = styled.ul`
+    padding: 0;
+    margin: 0;
+`

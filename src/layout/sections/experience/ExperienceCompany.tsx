@@ -6,11 +6,11 @@ type ExperienceCompanyCompanyPropsType = {
 }
 export const ExperienceCompany = (props: ExperienceCompanyCompanyPropsType) => {
     return (
-        <StyledExperienceCompanyCompany>{props.company}</StyledExperienceCompanyCompany>
+        <StyledExperienceCompany>{props.company}</StyledExperienceCompany>
     );
 };
 
-const StyledExperienceCompanyCompany = styled.span`
+const StyledExperienceCompany = styled.span`
     display: block;
     font-size: 12px;
     line-height: 28px;

@@ -7,16 +7,16 @@ import {ExperiencePlace} from "./ExperiencePlace";
 import {ExperienceTime} from "./ExperienceTime";
 import {ExperiencePeriod} from "./ExperiencePeriod";
 
-type ExperienceListItemPropsType = {
+type ExperienceItemPropsType = {
     title: string
     company: string
     place: string
     time: string
     period: string
 }
-export const ExperienceListItem = (props: ExperienceListItemPropsType) => {
+export const ExperienceItem = (props: ExperienceItemPropsType) => {
     return (
-        <StyledExperienceListItem>
+        <StyledExperienceItem>
             <FlexWrapper justify={"space-between"} direction={"column"}>
                 <ThirdTitle title={props.title}/>
                 <FlexWrapper justify={"space-between"}>
@@ -28,12 +28,12 @@ export const ExperienceListItem = (props: ExperienceListItemPropsType) => {
                     <ExperienceTime time={props.time}/>
                     <ExperiencePeriod period={props.period}/>
                 </FlexWrapper>
-        </StyledExperienceListItem>
+        </StyledExperienceItem>
     );
 };
 
 
-const StyledExperienceListItem = styled.li`
+const StyledExperienceItem = styled.li`
     display: flex;
     justify-content: space-between;
     align-items: center;

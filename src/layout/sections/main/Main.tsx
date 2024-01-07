@@ -24,7 +24,7 @@ export const Main = () => {
             <FlexWrapper justify={"space-between"} direction={"column"} gap={"40px"}>
                 <About/>
                 <Experience/>
-                {/*<Education/>*/}
+                <Education/>
                 <Skills/>
                 <Projects/>
                 <Testimony/>
