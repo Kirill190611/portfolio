@@ -27,9 +27,12 @@ export const Skills = () => {
     );
 };
 
-const StyledSkillsContainer = styled.div`
+const StyledSkillsContainer = styled.ul`
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
     gap: 96px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 `

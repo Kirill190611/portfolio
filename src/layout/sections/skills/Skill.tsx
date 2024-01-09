@@ -16,7 +16,7 @@ export const Skill = (props: SkillPropsType) => {
     );
 };
 
-const StyledSkill = styled.div`
+const StyledSkill = styled.li`
     display: flex;
     align-items: center;
     justify-content: center;
