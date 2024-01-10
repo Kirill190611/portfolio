@@ -47,6 +47,7 @@ body {
   font-family: Jost, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: rgba(102, 102, 102, 1);
 }
 
 code {

@@ -6,24 +6,28 @@ export const Social = () => {
     return (
         <StyledSocial>
             <StyledSocialList>
-                <SocialItem iconId={"vkSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 30 30"}/>
-                <SocialItem iconId={"telegramSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 30 30"}/>
-                <SocialItem iconId={"instagramSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 30 30"}/>
-                <SocialItem iconId={"linkedinSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 30 30"}/>
-                <SocialItem iconId={"githubSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 30 30"}/>
+                <SocialItem iconId={"vkSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 21 21"}/>
+                <SocialItem iconId={"telegramSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 21 21"}/>
+                <SocialItem iconId={"instagramSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 21 21"}/>
+                <SocialItem iconId={"linkedinSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 21 21"}/>
+                <SocialItem iconId={"githubSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"-1 -1 22 22"}/>
             </StyledSocialList>
         </StyledSocial>
     );
 };
 
 const StyledSocial = styled.div`
-    ul {
-        display: flex;
-        gap: 20px;  
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
 `
 
 const StyledSocialList = styled.ul`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     padding: 0;
     margin: 0;
     list-style: none;

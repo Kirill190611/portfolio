@@ -16,9 +16,11 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    display: flex;
-    justify-content: space-between;
     font-family: Jost, sans-serif;
     font-weight: normal;
     font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
 `
