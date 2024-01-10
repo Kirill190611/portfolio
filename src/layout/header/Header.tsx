@@ -18,4 +18,7 @@ export const Header = () => {
 const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
+    font-family: Jost, sans-serif;
+    font-weight: normal;
+    font-style: normal;
 `
