@@ -24,10 +24,9 @@ export const Education = () => {
 };
 
 const StyledEducation = styled.section`
-
+    margin: 0 0 38px 0;
 `
 
 const StyledEducationList = styled.ul`
-    padding: 0;
-    margin: 0;
+    
 `

@@ -19,12 +19,12 @@ export const EducationItem = (props: EducationItemPropsType) => {
         <StyledEducationItem>
             <FlexWrapper justify={"space-between"} direction={"column"}>
                 <ThirdTitle title={props.title}/>
-                <FlexWrapper justify={"space-between"}>
+                <StyledEducationWrapper>
                     <EducationUniversity university={props.university}/>
                     <EducationPlace place={props.place}/>
-                </FlexWrapper>
+                </StyledEducationWrapper>
             </FlexWrapper>
-            <FlexWrapper justify={"space-between"} align={"start"} direction={"column"}>
+            <FlexWrapper justify={"space-between"} align={"end"} direction={"column"} gap={"10px"}>
                 <EducationLevel level={props.level}/>
                 <EducationPeriod period={props.period}/>
             </FlexWrapper>
@@ -36,4 +36,12 @@ const StyledEducationItem = styled.li`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
+`
+
+const StyledEducationWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
 `

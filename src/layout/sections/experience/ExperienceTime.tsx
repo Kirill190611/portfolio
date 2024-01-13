@@ -18,6 +18,7 @@ const StyledExperienceTIme = styled.span`
     min-width: 84px;
     min-height: 24px;
     font-size: 12px;
+    padding: 2px 5px;
     line-height: 28px;
     font-weight: 500;
     background-color: ${Theme.lightTheme.backgroundColors.accent};
