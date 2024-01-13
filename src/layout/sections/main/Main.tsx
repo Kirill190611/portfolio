@@ -10,10 +10,11 @@ import {Skills} from "../skills/Skills";
 import {Projects} from "../projects/Projects";
 import {Contact} from "../contact/Contact";
 import {Testimony} from "../testimony/Testimony";
+import {BodyWrapper} from "../../../components/BodyWrapper";
 
 export const Main = () => {
     return (
-        <div>
+        <BodyWrapper>
             <FlexWrapper justify={"space-between"} align={"center"}>
                 <div>
                     <MainText>Hi There, <br/> I am <span>Kirill Soldatov</span></MainText>
@@ -30,7 +31,7 @@ export const Main = () => {
                 <Testimony/>
                 <Contact/>
             </FlexWrapper>
-        </div>
+        </BodyWrapper>
     );
 
 };

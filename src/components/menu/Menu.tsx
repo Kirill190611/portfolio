@@ -31,6 +31,7 @@ const StyledMenuList = styled.ul`
     margin: 0;
     list-style: none;
     max-width: 635px;
+    min-height: 70px;
     
     li {
         display: flex;

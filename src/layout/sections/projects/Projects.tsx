@@ -62,5 +62,5 @@ const StyledProjectsContainer = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: start;
-    gap: 62px 34px;
+    gap: 27px;
 `
