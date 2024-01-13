@@ -18,6 +18,9 @@ export const Theme = {
             primary: "#FFFFFF",
             accent: "#D7FFE0"
         },
+        buttonsColor: {
+            primary: "#000000"
+        },
         fontSize: {
             primary: "20px",
             secondary: "18px",

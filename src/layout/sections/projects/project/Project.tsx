@@ -5,6 +5,7 @@ import {ProjectDescription} from "../../../../components/descriptions/ProjectDes
 import {ProjectStackDescription} from "../../../../components/descriptions/ProjectStackDescription";
 import {StyledButtonsProject} from "../../../../components/buttons/StyledButtonsProject";
 import styled from "styled-components";
+import {Theme} from "../../../../styles/Theme.styled";
 
 type ProjectPropsType = {
     title: string
@@ -35,9 +36,9 @@ const StyledProject = styled.div`
     align-items: start;
     justify-content: start;
     flex-direction: column;
-    width: 375px;
-    min-height: 570px;
-    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    min-height: 540px;
+    background-color: ${Theme.lightTheme.backgroundColors.primary};
     box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
 `
@@ -48,8 +49,7 @@ const StyledDescriptionWrapper = styled.div`
     justify-content: center;
     gap: 15px;
     width: 100%;
-    padding: 30px 28px;
-    box-sizing: border-box;
+    padding: 27px 28px 26px;
 `
 
 const StyledButtonsWrapper = styled.div`

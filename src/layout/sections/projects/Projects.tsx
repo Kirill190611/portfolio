@@ -58,9 +58,9 @@ export const Projects = () => {
 };
 
 const StyledProjectsContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: start;
-    gap: 27px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(540px, auto);
+    gap: 30px;
+    margin: 35px 0;
 `

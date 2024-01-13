@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme.styled";
 
 type ProjectDescriptionPropsType = {
     description: string
@@ -11,9 +12,7 @@ export const ProjectDescription = (props: ProjectDescriptionPropsType) => {
 };
 
 const StyledProjectDescription = styled.p`
-    font-size: 18px;
+    font-size: ${Theme.lightTheme.fontSize.secondary};
     line-height: 26px;
     font-weight: 300;
-    color: rgba(102, 102, 102, 1);
-    margin: 0;
 `

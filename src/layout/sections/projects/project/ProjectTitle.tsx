@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../../../../styles/Theme.styled";
 
 type ProjectTitlePropsType = {
     title: string
@@ -11,10 +12,9 @@ export const ProjectTitle = (props: ProjectTitlePropsType) => {
 };
 
 const StyledProjectTile = styled.h4`
-    font-size: 28px;
+    font-size: ${Theme.lightTheme.titleFontSize.projectsTitle};
     line-height: 26px;
     align-items: center;
     font-weight: 500;
-    color: black;
-    margin: 0;
+    color: ${Theme.lightTheme.titleColors.secondary};
 `

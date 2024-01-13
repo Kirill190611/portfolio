@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme.styled";
 
 export const StyledButtonsProject = styled.a`
     display: flex;
@@ -7,6 +8,6 @@ export const StyledButtonsProject = styled.a`
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
-    color: black;
+    color: ${Theme.lightTheme.buttonsColor.primary};
 `
 
