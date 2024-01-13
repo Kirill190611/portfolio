@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme.styled";
 
 type SecondTitlePropsType = {
     title: string
@@ -11,10 +12,9 @@ export const SecondTitle = (props: SecondTitlePropsType) => {
 };
 
 const StyledSecondTitle = styled.h2`
-    font-size: 42px;
+    font-size: ${Theme.lightTheme.titleFontSize.secondary};
     line-height: 52px;
     font-weight: 700;
-    color: rgba(66, 68, 110, 1);
+    color: ${Theme.lightTheme.titleColors.primary};
     margin: 0 0 40px 0;
-    padding: 0;
 `

@@ -2,13 +2,16 @@ import './App.css';
 import {Header} from "./layout/header/Header";
 import {Main} from "./layout/sections/main/Main";
 import {Footer} from "./layout/footer/Footer";
+import {BodyWrapper} from "./components/BodyWrapper";
 
 function App() {
     return (
         <div className="App">
-            <Header/>
-            <Main/>
-            <Footer/>
+            <BodyWrapper>
+                <Header/>
+                <Main/>
+                <Footer/>
+            </BodyWrapper>
         </div>
     );
 }

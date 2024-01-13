@@ -7,7 +7,7 @@ export const Theme = {
             darkContent: "#000000"
         },
         textAccentColors: {
-            primaryAccent: "#13B0F5",
+            primaryAccent: "#00C0FD",
             secondaryAccent: "#018C0F"
         },
         titleColors: {
@@ -26,7 +26,7 @@ export const Theme = {
         },
         titleFontSize: {
             primary: "58px",
-            secondary: "48px",
+            secondary: "42px",
             projectsTitle: "28px"
         }
     }

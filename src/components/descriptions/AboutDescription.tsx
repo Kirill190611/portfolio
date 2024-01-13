@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme.styled";
 
 type AboutDescriptionPropsType = {
     content: string
@@ -11,8 +12,7 @@ export const AboutDescription = (props: AboutDescriptionPropsType) => {
 };
 
 const StyledAboutDescription = styled.p`
-    font-size: 18px;
+    font-size: ${Theme.lightTheme.fontSize.secondary};
     line-height: 26px;
     font-weight: 400;
-    color: rgba(102, 102, 102, 1);
 `

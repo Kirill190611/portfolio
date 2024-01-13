@@ -12,20 +12,18 @@ import {BodyWrapper} from "../../components/BodyWrapper";
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
 export const Footer = () => {
     return (
-        <BodyWrapper>
-            <StyledFooter>
-                <FlexWrapper justify={"space-between"} align={"center"}>
-                    <Logo/>
-                    <FooterMobail/>
-                    <FooterMail/>
-                    <Social/>
-                </FlexWrapper>
-                <FlexWrapper justify={"space-between"} align={"center"}>
-                    <Menu menuItems={items}/>
-                    <FooterDev/>
-                </FlexWrapper>
-            </StyledFooter>
-        </BodyWrapper>
+        <StyledFooter>
+            <FlexWrapper justify={"space-between"} align={"center"}>
+                <Logo/>
+                <FooterMobail/>
+                <FooterMail/>
+                <Social/>
+            </FlexWrapper>
+            <FlexWrapper justify={"space-between"} align={"center"}>
+                <Menu menuItems={items}/>
+                <FooterDev/>
+            </FlexWrapper>
+        </StyledFooter>
     );
 };
 

@@ -28,7 +28,4 @@ const StyledSocialList = styled.ul`
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
 `
