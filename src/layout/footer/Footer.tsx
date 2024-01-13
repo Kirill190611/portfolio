@@ -7,7 +7,6 @@ import {FooterMail} from "../../components/contacts/FooterMail";
 import {Social} from "../../components/social/Social";
 import {Menu} from "../../components/menu/Menu";
 import {FooterDev} from "../../components/contacts/FooterDev";
-import {BodyWrapper} from "../../components/BodyWrapper";
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
 export const Footer = () => {

@@ -27,6 +27,7 @@ export const Theme = {
         titleFontSize: {
             primary: "58px",
             secondary: "42px",
+            experienceTitle: "20px",
             projectsTitle: "28px"
         }
     }

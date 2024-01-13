@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../../../styles/Theme.styled";
 
 type ExperienceCompanyCompanyPropsType = {
     company: string
@@ -15,5 +16,5 @@ const StyledExperienceCompany = styled.span`
     font-size: 12px;
     line-height: 28px;
     font-weight: 500;
-    color: rgba(167, 167, 167, 1);
+    color: ${Theme.lightTheme.textColors.lightContent};
 `

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme.styled";
 
 type ThirdTitlePropsType = {
     title: string
@@ -11,8 +12,8 @@ export const ThirdTitle = (props: ThirdTitlePropsType) => {
 };
 
 const StyledThirdTitle = styled.h3`
-    font-size: 20px;
+    font-size: ${Theme.lightTheme.titleFontSize.experienceTitle};
     line-height: 28px;
     font-weight: 400;
-    color: rgba(102, 102, 102, 1);
+    margin-bottom: 5px;
 `
