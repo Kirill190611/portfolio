@@ -2,9 +2,12 @@ import React from 'react';
 import styled from "styled-components";
 import {Theme} from "../../styles/Theme.styled";
 
-export const ContactMail = () => {
+type ContactMailPropsType = {
+    mail: string
+}
+export const ContactMail = (props: ContactMailPropsType) => {
     return (
-        <StyledContactMail href={"mailto:k.igorevitch88@yandex.ru"}>k.igorevitch88@yandex.ru</StyledContactMail>
+        <StyledContactMail href={"mailto:k.igorevitch88@yandex.ru"}>{props.mail}</StyledContactMail>
     );
 };
 

@@ -1,14 +1,17 @@
 import styled from "styled-components";
 import {Theme} from "../../styles/Theme.styled";
 
-export const ContactDescription = () => {
+type ContactDescriptionPropsType = {
+    content: string
+}
+export const ContactDescription = (props: ContactDescriptionPropsType) => {
     return (
-        <StyledContactDescription>For any questions please mail me:</StyledContactDescription>
+        <StyledContactDescription>{props.content}</StyledContactDescription>
     );
 };
 
 const StyledContactDescription = styled.p`
-    font-size: 58px;
+    font-size: ${Theme.lightTheme.titleFontSize.primary};
     align-items: center;
     font-weight: 700;
     color: ${Theme.lightTheme.textColors.secondary};
