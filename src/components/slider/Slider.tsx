@@ -1,20 +1,27 @@
 import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../FlexWrapper";
+import {Slide} from "./Slide";
+import {Theme} from "../../styles/Theme.styled";
 
 export const Slider = () => {
     return (
         <StyledSlider>
-            <FlexWrapper align={"center"}>
-                <Slide>
-                    <Text>This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</Text>
-                    <Name>@Ivan Ivanov</Name>
-                </Slide>
-            </FlexWrapper>
+            <SliderWrapper>
+                <Slide text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+                       author={"@Ivan Ivanon"}
+                       company={"Company 1"}/>
+                <Slide text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+                       author={"@Ivan Ivanon"}
+                       company={"Company 1"}/>
+                <Slide text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+                       author={"@Ivan Ivanon"}
+                       company={"Company 1"}/>
+            </SliderWrapper>
             <Pagination>
-                <span> </span>
-                <span> </span>
-                <span> </span>
+                <PaginationItem> </PaginationItem>
+                <PaginationItem> </PaginationItem>
+                <PaginationItem> </PaginationItem>
             </Pagination>
         </StyledSlider>
     );
@@ -24,30 +31,24 @@ const StyledSlider = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
-    max-width: 500px;
 `
 
-const Slide = styled.div`
-    text-align: center;
-`
-
-const Text = styled.p`
-
-`
-
-const Name = styled.span`
-
+const SliderWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 0 35px 0;
 `
 
 const Pagination = styled.div`
     display: flex;
-    
-    span {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: 5px;
-        background-color: yellow;
-    }
+`
+
+const PaginationItem = styled.span`
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: ${Theme.lightTheme.buttonsColor.secondary};
 `

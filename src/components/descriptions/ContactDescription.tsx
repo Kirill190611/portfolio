@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme.styled";
 
 export const ContactDescription = () => {
     return (
@@ -8,9 +9,8 @@ export const ContactDescription = () => {
 
 const StyledContactDescription = styled.p`
     font-size: 58px;
-    line-height: 70px;
     align-items: center;
     font-weight: 700;
-    color: rgba(30, 14, 98, 1);
-    margin: 0;
+    color: ${Theme.lightTheme.textColors.secondary};
+    margin: 0 0 35px 0;
 `

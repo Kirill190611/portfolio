@@ -19,5 +19,5 @@ const StyledTestimony = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #aeb9ff;
+    margin: 0 0 38px 0;
 `

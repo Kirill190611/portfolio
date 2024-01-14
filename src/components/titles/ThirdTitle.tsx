@@ -13,7 +13,6 @@ export const ThirdTitle = (props: ThirdTitlePropsType) => {
 
 const StyledThirdTitle = styled.h3`
     font-size: ${Theme.lightTheme.titleFontSize.experienceTitle};
-    line-height: 28px;
     font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 `

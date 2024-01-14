@@ -14,7 +14,6 @@ export const EducationUniversity = (props: EducationUniversityPropsType) => {
 const StyledEducationUniversity = styled.span`
     display: block;
     font-size: 12px;
-    line-height: 28px;
     font-weight: 500;
     color: ${Theme.lightTheme.textColors.lightContent};
 `

@@ -13,6 +13,5 @@ export const AboutDescription = (props: AboutDescriptionPropsType) => {
 
 const StyledAboutDescription = styled.p`
     font-size: ${Theme.lightTheme.fontSize.secondary};
-    line-height: 26px;
     font-weight: 400;
 `

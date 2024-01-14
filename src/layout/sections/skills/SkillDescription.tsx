@@ -16,6 +16,5 @@ const StyledSkillDescription = styled.h3`
     align-items: center;
     justify-content: center;
     font-size: ${Theme.lightTheme.fontSize.secondary};
-    line-height: 28px;
     font-weight: 400;
 `

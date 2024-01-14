@@ -13,7 +13,6 @@ export const SecondTitle = (props: SecondTitlePropsType) => {
 
 const StyledSecondTitle = styled.h2`
     font-size: ${Theme.lightTheme.titleFontSize.secondary};
-    line-height: 52px;
     font-weight: 700;
     color: ${Theme.lightTheme.titleColors.primary};
     margin: 0 0 40px 0;

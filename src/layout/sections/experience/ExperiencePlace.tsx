@@ -14,7 +14,6 @@ export const ExperiencePlace = (props: ExperiencePlacePropsType) => {
 const StyledExperiencePlace = styled.span`
     display: block;
     font-size: 12px;
-    line-height: 28px;
     font-weight: 500;
     color: ${Theme.lightTheme.textColors.lightContent};
 `

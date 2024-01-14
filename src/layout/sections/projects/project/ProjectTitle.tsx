@@ -13,7 +13,6 @@ export const ProjectTitle = (props: ProjectTitlePropsType) => {
 
 const StyledProjectTile = styled.h4`
     font-size: ${Theme.lightTheme.titleFontSize.projectsTitle};
-    line-height: 26px;
     align-items: center;
     font-weight: 500;
     color: ${Theme.lightTheme.titleColors.secondary};

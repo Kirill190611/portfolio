@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme.styled";
 
 export const ContactMail = () => {
     return (
@@ -9,8 +10,7 @@ export const ContactMail = () => {
 
 const StyledContactMail = styled.a`
     font-size: 58px;
-    line-height: 70px;
     font-weight: 700;
     align-items: center;
-    color: rgba(19, 176, 245, 1);
+    color: ${Theme.lightTheme.textAccentColors.primaryAccent};
 `

@@ -16,10 +16,10 @@ const StyledEducationTIme = styled.span`
     justify-content: center;
     align-items: center;
     min-width: 84px;
-    min-height: 14px;
+    min-height: 24px;
     padding: 2px 5px;
     font-size: 12px;
-    line-height: 28px;
+    margin-bottom: 10px;
     font-weight: 500;
     background-color: ${Theme.lightTheme.backgroundColors.accent};
     color: ${Theme.lightTheme.textAccentColors.secondaryAccent};
