@@ -17,5 +17,9 @@ export const Contact = () => {
 };
 
 const ContactSection = styled.section`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
     margin: 0 0 35px 0;
 `

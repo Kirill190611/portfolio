@@ -1,15 +1,18 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme.styled";
 
-export const FooterMail = () => {
+type FooterMailPropsType = {
+    mail: string
+}
+export const FooterMail = (props: FooterMailPropsType) => {
     return (
-        <StyledFooterMail href={"mailto:k.igorevitch88@yandex.ru"}>k.igorevitch88@yandex.ru</StyledFooterMail>
+        <StyledFooterMail href={"mailto:k.igorevitch88@yandex.ru"}>{props.mail}</StyledFooterMail>
     );
 };
 
 const StyledFooterMail = styled.a`
-    font-size: 18px;
-    line-height: 26px;
+    font-size: ${Theme.lightTheme.fontSize.secondary};
     font-weight: 400;
-    color: rgba(66, 68, 110, 1);
+    color: ${Theme.lightTheme.textColors.secondary};
 `

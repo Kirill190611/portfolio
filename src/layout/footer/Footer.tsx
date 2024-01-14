@@ -12,12 +12,12 @@ const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper justify={"space-between"} align={"center"}>
+            <FooterContactWrapper>
                 <Logo/>
-                <FooterMobail/>
-                <FooterMail/>
+                <FooterMobail phone={"+7-920-097-96-31"}/>
+                <FooterMail mail={"k.igorevitch88@yandex.ru"}/>
                 <Social/>
-            </FlexWrapper>
+            </FooterContactWrapper>
             <FlexWrapper justify={"space-between"} align={"center"}>
                 <Menu menuItems={items}/>
                 <FooterDev/>
@@ -30,4 +30,22 @@ const StyledFooter = styled.footer`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    min-height: 176px;
+`
+
+const FooterContactWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+    &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #666;
+        bottom: -19px;
+    }
 `
