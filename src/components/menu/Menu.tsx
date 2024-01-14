@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme.styled";
 
 export const Menu = (props: {menuItems: Array<string>}) => {
     return (
         <StyledMenu>
             <StyledMenuList>
                 {props.menuItems.map((item,index)=>{
-                    return <li key={index}>
-                        <a href={"#"}>{item}</a>
-                    </li>
+                    return <MenuItem key={index}>
+                        <MenuLink href={"#"}>{item}</MenuLink>
+                    </MenuItem>
                 })}
             </StyledMenuList>
         </StyledMenu>
@@ -27,23 +28,34 @@ const StyledMenuList = styled.ul`
     gap: 20px 40px;
     flex-wrap: wrap;
     max-width: 635px;
-    min-height: 70px;
+    min-height: 65px;
+`
+
+const MenuItem = styled.li`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 95px;
+`
+
+const MenuLink = styled.a`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    color: inherit;
+    position: relative;
     
-    li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 95px;
-        min-height: 50px;
-    }
-    
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        font-family: inherit;
-        color: inherit;
+    &:hover:after {
+        position: absolute;
+        content: "";
+        display: block;
+        border-bottom: 3px solid ${Theme.lightTheme.textAccentColors.primaryAccent};
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: 0.2s;
     }
 `

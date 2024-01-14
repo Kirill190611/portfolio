@@ -37,6 +37,10 @@ const StyledEducationItem = styled.li`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    
+    &:last-child {
+        margin-bottom: 0px;
+    }
 `
 
 const StyledEducationWrapper = styled.div`

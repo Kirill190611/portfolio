@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {SocialIcon} from "./SocialIcon";
+import {Theme} from "../../styles/Theme.styled";
 
 type SocialItemPropsType = {
     iconId: string
@@ -31,6 +32,11 @@ const StyledSocialLink = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    stroke: rgba(102, 102, 102, 1);
-    fill: rgba(102, 102, 102, 1);
+    stroke: ${Theme.lightTheme.textColors.primary};
+    fill: ${Theme.lightTheme.textColors.primary};
+    
+    &:hover {
+        stroke: ${Theme.lightTheme.textAccentColors.primaryAccent};
+        fill: ${Theme.lightTheme.textAccentColors.primaryAccent};
+    }
 `
