@@ -20,6 +20,7 @@ export const GlobalStyled = createGlobalStyle`
         color: ${Theme.lightTheme.textColors.primary};
         background-color: ${Theme.lightTheme.backgroundColors.primary};
         font-size: ${Theme.lightTheme.fontSize.primary};
+        line-height: 1.2;
     }
     
     a {

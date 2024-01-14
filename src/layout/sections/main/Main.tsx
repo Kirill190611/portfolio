@@ -15,11 +15,11 @@ import {Theme} from "../../../styles/Theme.styled";
 export const Main = () => {
     return (
         <div>
-            <FlexWrapper justify={"space-between"} align={"center"} margin={"0 0 200px 0"}>
-                <div>
-                    <MainText>Hi There, <br/> I am <span>Kirill Soldatov</span></MainText>
+            <FlexWrapper justify={"space-between"} align={"center"} height={"50vh"} margin={"0 0 200px 0"}>
+                <TextContainer>
+                    <MainText>Hi There, <br/> I am <AccentText>Kirill Soldatov</AccentText></MainText>
                     <MainTitle>A Web developer.</MainTitle>
-                </div>
+                </TextContainer>
                 <PhotoWrapper>
                     <Photo src={photo} alt={"It's me"}/>
                 </PhotoWrapper>
@@ -46,15 +46,6 @@ const PhotoWrapper = styled.div`
     height: 350px;
     background: linear-gradient(#E70FAA, #00C0FD);
     border-radius: 50%;
-    position: relative;
-    
-    &::after {
-        position: absolute;
-        display: block;
-        content: "";
-        width: 400px;
-        height: 400px;
-    }
 `
 
 const Photo = styled.img`
@@ -68,11 +59,15 @@ const Photo = styled.img`
 const MainText = styled.p`
     color: ${Theme.lightTheme.textColors.secondary};
     font-size: ${Theme.lightTheme.titleFontSize.primary};
-    line-height: 70px;
     font-weight: 700;
+    margin-bottom: 10px;
+`
 
-    span {
-        color: ${Theme.lightTheme.textAccentColors.primaryAccent};
-    }
+const AccentText = styled.span`
+    color: ${Theme.lightTheme.textAccentColors.primaryAccent};
+`
+
+const TextContainer = styled.div`
+
 `
 
