@@ -39,7 +39,7 @@ const StyledEducationItem = styled.li`
     margin-bottom: 30px;
     
     &:last-child {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 `
 
