@@ -5,7 +5,6 @@ import {Menu} from "../../components/menu/Menu";
 import {Social} from "../../components/social/Social";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {Theme} from "../../styles/Theme.styled";
 import {MobileMenu} from "../../components/menu/ModileMenu";
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
