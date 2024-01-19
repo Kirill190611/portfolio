@@ -20,15 +20,19 @@ const StyledMenu = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70px;
+    min-height: 60px;
+    
+    @media ${Theme.media.tablet} {
+        display: none;
+    }
 `
 
 const StyledMenuList = styled.ul`
     display: flex;
-    gap: 20px 40px;
+    gap: 10px;
     flex-wrap: wrap;
     max-width: 635px;
-    min-height: 65px;
+    min-height: 60px;
 `
 
 const MenuItem = styled.li`

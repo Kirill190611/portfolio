@@ -34,5 +34,10 @@ export const Theme = {
             experienceTitle: "20px",
             projectsTitle: "28px"
         }
+    },
+
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)"
     }
 }

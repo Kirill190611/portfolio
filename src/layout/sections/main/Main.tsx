@@ -15,7 +15,7 @@ import {Theme} from "../../../styles/Theme.styled";
 export const Main = () => {
     return (
         <div>
-            <FlexWrapper justify={"space-between"} align={"center"} height={"50vh"} margin={"0 0 200px 0"}>
+            <FlexWrapper justify={"space-between"} align={"center"} height={"50vh"} margin={"50px 0"}>
                 <TextContainer>
                     <MainText>Hi There, <br/> I am <AccentText>Kirill Soldatov</AccentText></MainText>
                     <MainTitle>A Web developer.</MainTitle>
