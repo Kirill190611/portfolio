@@ -7,11 +7,31 @@ export const Social = () => {
     return (
         <StyledSocial>
             <StyledSocialList>
-                {/*<SocialItem iconId={"vkSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 21 21"}/>*/}
-                <SocialItem iconId={"telegramSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 21 21"}/>
-                {/*<SocialItem iconId={"instagramSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 21 21"}/>*/}
-                <SocialItem iconId={"linkedinSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"0 0 21 21"}/>
-                <SocialItem iconId={"githubSocialIcon"} href={"#"} width={"30"} height={"30"} viewBox={"-1 -1 22 22"}/>
+                {/*<SocialItem iconId={"vkSocialIcon"} */}
+                {/*            href={"#"} */}
+                {/*            width={"30"} */}
+                {/*            height={"30"} */}
+                {/*            viewBox={"0 0 21 21"}/>*/}
+                <SocialItem iconId={"telegramSocialIcon"}
+                            href={"#"}
+                            width={"30"}
+                            height={"30"}
+                            viewBox={"0 0 21 21"}/>
+                {/*<SocialItem iconId={"instagramSocialIcon"} */}
+                {/*            href={"#"} */}
+                {/*            width={"30"} */}
+                {/*            height={"30"} */}
+                {/*            viewBox={"0 0 21 21"}/>*/}
+                <SocialItem iconId={"linkedinSocialIcon"}
+                            href={"#"}
+                            width={"30"}
+                            height={"30"}
+                            viewBox={"0 0 21 21"}/>
+                <SocialItem iconId={"githubSocialIcon"}
+                            href={"#"}
+                            width={"30"}
+                            height={"30"}
+                            viewBox={"-1 -1 22 22"}/>
             </StyledSocialList>
         </StyledSocial>
     );
