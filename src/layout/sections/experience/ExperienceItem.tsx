@@ -6,6 +6,7 @@ import {ExperienceCompany} from "./ExperienceCompany";
 import {ExperiencePlace} from "./ExperiencePlace";
 import {ExperienceTime} from "./ExperienceTime";
 import {ExperiencePeriod} from "./ExperiencePeriod";
+import {Theme} from "../../../styles/Theme.styled";
 
 type ExperienceItemPropsType = {
     title: string
@@ -49,4 +50,12 @@ const StyledExperienceWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     min-width: 300px;
+
+    @media ${Theme.media.mobile} {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        min-width: 150px;
+        min-height: 35px;
+    }
 `

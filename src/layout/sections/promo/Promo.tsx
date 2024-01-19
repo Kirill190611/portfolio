@@ -12,7 +12,7 @@ export const Promo = () => {
         <Container>
             <FlexWrapper justify={"space-around"}
                          align={"center"}
-                         height={"50vh"}
+                         height={"60vh"}
                          wrap={"wrap"}
                          margin={"75px 0"}>
                 <TextContainer>

@@ -33,5 +33,5 @@ const StyledHeader = styled.header`
     top: 0;
     left: 0;
     right: 0;
-    padding: 20px 0;
+    padding: 15px 0;
 `
