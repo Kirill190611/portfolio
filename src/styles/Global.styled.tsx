@@ -64,7 +64,7 @@ export const GlobalStyled = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         color: ${Theme.lightTheme.textColors.primary};
         background-color: ${Theme.lightTheme.backgroundColors.primary};
-        font-size: ${Theme.lightTheme.fontSize.primary};
+        font-size: 20px;
         line-height: 1.2;
     }
     

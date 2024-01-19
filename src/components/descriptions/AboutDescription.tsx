@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Theme} from "../../styles/Theme.styled";
+import {font} from "../../styles/Common";
 
 type AboutDescriptionPropsType = {
     content: string
@@ -12,6 +13,5 @@ export const AboutDescription = (props: AboutDescriptionPropsType) => {
 };
 
 const StyledAboutDescription = styled.p`
-    font-size: ${Theme.lightTheme.fontSize.secondary};
-    font-weight: 400;
+    ${font({family: "'Jost', sans-serif", weight: 400, Fmax: 18, Fmin: 16})}
 `
