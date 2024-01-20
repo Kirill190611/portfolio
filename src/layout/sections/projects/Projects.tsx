@@ -12,7 +12,6 @@ import projectImage4 from "../../../assets/images/project-images/project-4.webp"
 import projectImage5 from "../../../assets/images/project-images/project-5.webp"
 import projectImage6 from "../../../assets/images/project-images/project-6.webp"
 import {Container} from "../../../components/Container";
-import {Theme} from "../../../styles/Theme.styled";
 
 const projectsItems = ["All", "Landing page", "React", "SPA"]
 export const Projects = () => {

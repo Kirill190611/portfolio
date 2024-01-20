@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexWrapper} from "../FlexWrapper";
 import {Slide} from "./Slide";
 import {Theme} from "../../styles/Theme.styled";
 
@@ -11,17 +10,11 @@ export const Slider = () => {
                 <Slide text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
                        author={"@Ivan Ivanon"}
                        company={"Company 1"}/>
-                <Slide text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-                       author={"@Ivan Ivanon"}
-                       company={"Company 1"}/>
-                <Slide text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-                       author={"@Ivan Ivanon"}
-                       company={"Company 1"}/>
             </SliderWrapper>
             <Pagination>
-                <PaginationItem> </PaginationItem>
-                <PaginationItem> </PaginationItem>
-                <PaginationItem> </PaginationItem>
+                <PaginationItem></PaginationItem>
+                <PaginationItem className={"active"}></PaginationItem>
+                <PaginationItem></PaginationItem>
             </Pagination>
         </StyledSlider>
     );
@@ -34,10 +27,12 @@ const StyledSlider = styled.div`
 `
 
 const SliderWrapper = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 0 0 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 35px;
 `
 
 const Pagination = styled.div`
@@ -48,7 +43,24 @@ const PaginationItem = styled.span`
     display: inline-block;
     width: 20px;
     height: 20px;
+    border: 2px solid black;
     border-radius: 50%;
-    margin: 5px;
-    background-color: ${Theme.lightTheme.buttonsColor.secondary};
+    margin: 5px 10px;
+    background-color: ${Theme.lightTheme.buttonsColor.primary};
+    position: relative;
+    
+    &.active {
+        background-color: ${Theme.lightTheme.buttonsColor.secondary};
+    }
+    
+    &:not(:last-child)::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: black;
+        top: 50%;
+        left: 100%;
+    }
 `
