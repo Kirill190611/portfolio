@@ -49,14 +49,15 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-    padding: 25px 0;
+    
 `
 
 const StyledSkillsContainer = styled.ul`
     display: grid;
-    grid-template-columns: repeat(6, 120px);
+    grid-template-columns: repeat(auto-fit, minmax(80px, 120px));
     grid-auto-rows: minmax(120px, 160px);
-    gap: 45px 90px;
-    align-items: center;
-    justify-items: center;
+    gap: 45px 60px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
 `

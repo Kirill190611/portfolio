@@ -16,5 +16,5 @@ export const About = () => {
 };
 
 const StyledAbout = styled.section`
-    padding: 25px 0;
+
 `

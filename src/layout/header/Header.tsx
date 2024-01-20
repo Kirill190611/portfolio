@@ -6,6 +6,7 @@ import {Social} from "../../components/social/Social";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {MobileMenu} from "../../components/menu/ModileMenu";
+import {Theme} from "../../styles/Theme.styled";
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
 export const Header = () => {
@@ -34,4 +35,8 @@ const StyledHeader = styled.header`
     left: 0;
     right: 0;
     padding: 15px 0;
+    
+    @media ${Theme.media.mobile} {
+        padding: 10px 0;
+    }
 `

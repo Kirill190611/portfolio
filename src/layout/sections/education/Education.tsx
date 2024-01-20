@@ -28,7 +28,7 @@ export const Education = () => {
 };
 
 const StyledEducation = styled.section`
-    padding: 25px 0;
+
 `
 
 const StyledEducationList = styled.ul`

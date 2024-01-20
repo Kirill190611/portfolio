@@ -68,6 +68,18 @@ export const GlobalStyled = createGlobalStyle`
         line-height: 1.2;
     }
     
+    section {
+        padding: 25px 0;
+        
+        @media ${Theme.media.tablet} {
+            padding: 20px 0;
+        }
+        
+        @media ${Theme.media.mobile} {
+            padding: 15px 0;
+        }
+    }
+    
     a {
         text-decoration: none;
     }

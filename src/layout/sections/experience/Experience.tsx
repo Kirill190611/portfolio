@@ -32,7 +32,7 @@ export const Experience = () => {
 };
 
 const StyledExperience = styled.section`
-    padding: 25px 0;
+
 `
 const StyledExperienceList = styled.ul`
 
