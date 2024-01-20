@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Theme} from "../../styles/Theme.styled";
+import {font} from "../../styles/Common";
 
 type ProjectDescriptionPropsType = {
     description: string
@@ -12,7 +13,5 @@ export const ProjectDescription = (props: ProjectDescriptionPropsType) => {
 };
 
 const StyledProjectDescription = styled.p`
-    font-size: ${Theme.lightTheme.fontSize.secondary};
-    line-height: 26px;
-    font-weight: 300;
+    ${font({family: "'Jost', sens-serif", weight: 300, Fmax: 18, Fmin: 14})};
 `

@@ -1,54 +1,48 @@
 import React from 'react';
 import styled from "styled-components";
 import {Theme} from "../../styles/Theme.styled";
-import {font} from "../../styles/Common";
 
-export const Menu = (props: {menuItems: Array<string>}) => {
+export const HeaderMenu = (props: {menuItems: Array<string>}) => {
     return (
-        <StyledMenu>
-            <StyledMenuList>
+        <StyledHeaderMenu>
+            <StyledHeaderMenuList>
                 {props.menuItems.map((item,index)=>{
-                    return <MenuItem key={index}>
-                        <MenuLink href={"#"}>{item}</MenuLink>
-                    </MenuItem>
+                    return <HeaderMenuItem key={index}>
+                        <HeaderMenuLink href={"#"}>{item}</HeaderMenuLink>
+                    </HeaderMenuItem>
                 })}
-            </StyledMenuList>
-        </StyledMenu>
+            </StyledHeaderMenuList>
+        </StyledHeaderMenu>
     );
 };
 
-const StyledMenu = styled.nav`
+const StyledHeaderMenu = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 60px;
-    ${font({family: "'Jost', sans-serif", weight: 400, Fmax: 20, Fmin: 18})};
+    
+    @media ${Theme.media.tablet} {
+        display: none;
+    }
 `
 
-const StyledMenuList = styled.ul`
+const StyledHeaderMenuList = styled.ul`
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     max-width: 635px;
     min-height: 60px;
-
-    @media ${Theme.media.mobile} {
-        min-height: 40px;
-    }
 `
 
-const MenuItem = styled.li`
+const HeaderMenuItem = styled.li`
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 95px;
-    
-    @media ${Theme.media.mobile} {
-        min-width: 60px;
-    }
 `
 
-const MenuLink = styled.a`
+const HeaderMenuLink = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;

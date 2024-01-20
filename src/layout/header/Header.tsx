@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
-import {Menu} from "../../components/menu/Menu";
 import {Social} from "../../components/social/Social";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {MobileMenu} from "../../components/menu/ModileMenu";
 import {Theme} from "../../styles/Theme.styled";
+import {HeaderMenu} from "../../components/menu/HeaderMenu";
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
 export const Header = () => {
@@ -17,7 +17,7 @@ export const Header = () => {
                              align={"center"}
                              wrap={"wrap"}>
                     <Logo/>
-                    <Menu menuItems={items}/>
+                    <HeaderMenu menuItems={items}/>
                     <MobileMenu menuItems={items}/>
                     <Social/>
                 </FlexWrapper>

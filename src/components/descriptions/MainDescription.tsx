@@ -15,7 +15,15 @@ export const MainDescription = (props: MainDescriptionPropsType) => {
 const StyledMainDescription = styled.p`
     ${font({family: "'Jost', sans-serif", weight: 400, Fmax: 32, Fmin: 24})};
     color: ${Theme.lightTheme.textColors.primary};
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     text-align: center;
     padding: 0 10px;
+    
+    @media ${Theme.media.tablet} {
+        margin-bottom: 20px;
+    }
+
+    @media ${Theme.media.mobile} {
+        margin-bottom: 15px;
+    }
 `

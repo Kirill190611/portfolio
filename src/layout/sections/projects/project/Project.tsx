@@ -17,7 +17,8 @@ type ProjectPropsType = {
 export const Project = (props: ProjectPropsType) => {
     return (
         <StyledProject>
-            <ProjectImage src={props.src} alt={props.alt}/>
+            <ProjectImage src={props.src}
+                          alt={props.alt}/>
             <StyledDescriptionWrapper>
                 <ProjectTitle title={props.title}/>
                 <ProjectDescription description={props.description}/>
@@ -36,20 +37,21 @@ const StyledProject = styled.div`
     align-items: start;
     justify-content: start;
     flex-direction: column;
+    max-width: 500px;
     width: 100%;
-    min-height: 540px;
     background-color: ${Theme.lightTheme.backgroundColors.primary};
     box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+    margin: 0 auto;
 `
 const StyledDescriptionWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-between;
     width: 100%;
-    padding: 27px 28px 26px;
+    height: 100%;
+    padding: 20px 25px;
 `
 
 const StyledButtonsWrapper = styled.div`
@@ -57,4 +59,5 @@ const StyledButtonsWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0 5px;
 `
