@@ -13,5 +13,5 @@ export const ProjectDescription = (props: ProjectDescriptionPropsType) => {
 };
 
 const StyledProjectDescription = styled.p`
-    ${font({family: "'Jost', sens-serif", weight: 300, Fmax: 18, Fmin: 14})};
+    ${font({family: "'Jost', sens-serif", weight: 500, Fmax: 18, Fmin: 14})};
 `

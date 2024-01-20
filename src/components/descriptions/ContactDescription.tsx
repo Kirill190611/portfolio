@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Theme} from "../../styles/Theme.styled";
+import {font} from "../../styles/Common";
 
 type ContactDescriptionPropsType = {
     content: string
@@ -11,9 +12,9 @@ export const ContactDescription = (props: ContactDescriptionPropsType) => {
 };
 
 const StyledContactDescription = styled.p`
-    font-size: ${Theme.lightTheme.titleFontSize.primary};
-    align-items: center;
-    font-weight: 700;
+    ${font({family: "'Jost', sans-serif", weight: 700, Fmax: 58, Fmin: 26})};
+    text-align: center;
     color: ${Theme.lightTheme.textColors.secondary};
     margin: 0 0 35px 0;
+    padding: 0 20px;
 `

@@ -23,5 +23,4 @@ const StyledTestimony = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px 0;
 `

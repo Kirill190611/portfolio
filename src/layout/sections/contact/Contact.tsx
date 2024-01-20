@@ -4,15 +4,20 @@ import {ContactDescription} from "../../../components/descriptions/ContactDescri
 import {ContactMail} from "../../../components/contacts/ContactMail";
 import {SecondTitle} from "../../../components/titles/SecondTitle";
 import styled from "styled-components";
+import {Container} from "../../../components/Container";
 
 export const Contact = () => {
     return (
-        <ContactSection>
-            <FlexWrapper justify={"center"} align={"center"} direction={"column"}>
-                <ContactDescription content={"For any questions please mail me:"}/>
-                <ContactMail mail={"k.igorevitch88@yandex.ru"}/>
-            </FlexWrapper>
-        </ContactSection>
+        <Container>
+            <ContactSection>
+                <FlexWrapper justify={"center"}
+                             align={"center"}
+                             direction={"column"}>
+                    <ContactDescription content={"For any questions please mail me:"}/>
+                    <ContactMail mail={"k.igorevitch88@yandex.ru"}/>
+                </FlexWrapper>
+            </ContactSection>
+        </Container>
     );
 };
 
@@ -20,6 +25,5 @@ const ContactSection = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40vh;
-    margin: 0 0 35px 0;
+    height: 30vh;
 `
