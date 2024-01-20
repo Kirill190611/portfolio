@@ -6,55 +6,51 @@ import styled from "styled-components";
 import {Skill} from "./Skill";
 import {ThirdTitle} from "../../../components/titles/ThirdTitle";
 import {SkillDescription} from "./SkillDescription";
+import {Container} from "../../../components/Container";
 
 export const Skills = () => {
     return (
-        <section>
-            <FlexWrapper direction={"column"} justify={"space-between"} align={"center"}>
-                <SecondTitle title={"My Tech Stack"}/>
-                <MainDescription description={"Technologies I’ve been working with recently"}/>
-                <StyledSkillsContainer>
-                    <FlexWrapper direction={"column"} align={"center"} gap={"10px"}>
-                        <Skill iconId={"htmlIcon"}/>
-                        <SkillDescription title={"HTML5"}/>
-                    </FlexWrapper>
-                    <FlexWrapper direction={"column"} align={"center"} gap={"10px"}>
-                        <Skill iconId={"cssIcon"}/>
-                        <SkillDescription title={"CSS3"}/>
-                    </FlexWrapper>
-                    <FlexWrapper direction={"column"} align={"center"} gap={"10px"}>
-                        <Skill iconId={"jsIcon"} viewBox={"7 7 105 105"}/>
-                        <SkillDescription title={"JavaScript"}/>
-                    </FlexWrapper>
-                    <FlexWrapper direction={"column"} align={"center"} gap={"10px"}>
-                        <Skill iconId={"reactIcon"} viewBox={"-2 -8 116 116"}/>
-                        <SkillDescription title={"React"}/>
-                    </FlexWrapper>
-                    <FlexWrapper direction={"column"} align={"center"} gap={"10px"}>
-                        <Skill iconId={"sassIcon"} viewBox={"-2 -15 120 120"}/>
-                        <SkillDescription title={"SASS"}/>
-                    </FlexWrapper>
-                    <FlexWrapper direction={"column"} align={"center"} gap={"10px"}>
-                        <Skill iconId={"typescriptIcon"}/>
-                        <SkillDescription title={"TypeScript"}/>
-                    </FlexWrapper>
-                    <FlexWrapper direction={"column"} align={"center"} gap={"10px"}>
-                        <Skill iconId={"styledcomponentsIcon"}/>
-                        <SkillDescription title={"SC"}/>
-                    </FlexWrapper>
-                    <FlexWrapper direction={"column"} align={"center"} gap={"10px"}>
-                        <Skill iconId={"gitIcon"} viewBox={"-8 -8 120 120"}/>
-                        <SkillDescription title={"Git"}/>
-                    </FlexWrapper>
-                    <FlexWrapper direction={"column"} align={"center"} gap={"10px"}>
-                        <Skill iconId={"githubIcon"} viewBox={"-17 -17 120 120"}/>
-                        <SkillDescription title={"GitHub"}/>
-                    </FlexWrapper>
-                </StyledSkillsContainer>
-            </FlexWrapper>
-        </section>
+        <Container>
+            <StyledSkills>
+                <FlexWrapper direction={"column"}
+                             justify={"space-between"}
+                             align={"center"}>
+                    <SecondTitle title={"My Tech Stack"}/>
+                    <MainDescription description={"Technologies I’ve been working with recently"}/>
+                    <StyledSkillsContainer>
+                        <Skill iconId={"htmlIcon"}
+                               title={"HTML5"}/>
+                        <Skill iconId={"cssIcon"}
+                               title={"CSS3"}/>
+                        <Skill iconId={"jsIcon"}
+                               viewBox={"7 7 105 105"}
+                               title={"JavaScript"}/>
+                        <Skill iconId={"reactIcon"}
+                               viewBox={"-2 -8 116 116"}
+                               title={"React"}/>
+                        <Skill iconId={"sassIcon"}
+                               viewBox={"-2 -15 120 120"}
+                               title={"SASS"}/>
+                        <Skill iconId={"typescriptIcon"}
+                               title={"TypeScript"}/>
+                        <Skill iconId={"styledcomponentsIcon"}
+                               title={"SC"}/>
+                        <Skill iconId={"gitIcon"}
+                               viewBox={"-8 -8 120 120"}
+                               title={"Git"}/>
+                        <Skill iconId={"githubIcon"}
+                               viewBox={"-17 -17 120 120"}
+                               title={"GitHub"}/>
+                    </StyledSkillsContainer>
+                </FlexWrapper>
+            </StyledSkills>
+        </Container>
     );
 };
+
+const StyledSkills = styled.section`
+    padding: 25px 0;
+`
 
 const StyledSkillsContainer = styled.ul`
     display: grid;
@@ -63,5 +59,4 @@ const StyledSkillsContainer = styled.ul`
     gap: 45px 90px;
     align-items: center;
     justify-items: center;
-    margin: 0 0 38px 0;
 `
