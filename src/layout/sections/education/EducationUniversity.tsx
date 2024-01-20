@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Theme} from "../../../styles/Theme.styled";
+import {font} from "../../../styles/Common";
 
 type EducationUniversityPropsType = {
     university: string
@@ -13,7 +14,6 @@ export const EducationUniversity = (props: EducationUniversityPropsType) => {
 
 const StyledEducationUniversity = styled.span`
     display: block;
-    font-size: 12px;
-    font-weight: 500;
+    ${font({family: "'Jost', sans-serif", weight: 500, Fmax: 12, Fmin: 10})};
     color: ${Theme.lightTheme.textColors.lightContent};
 `

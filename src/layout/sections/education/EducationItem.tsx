@@ -6,6 +6,7 @@ import {EducationUniversity} from "./EducationUniversity";
 import {EducationPlace} from "./EducationPlace";
 import {EducationLevel} from "./EducationLevel";
 import {EducationPeriod} from "./EducationPeriod";
+import {Theme} from "../../../styles/Theme.styled";
 
 type EducationItemPropsType = {
     title: string
@@ -17,17 +18,18 @@ type EducationItemPropsType = {
 export const EducationItem = (props: EducationItemPropsType) => {
     return (
         <StyledEducationItem>
-            <FlexWrapper justify={"space-between"} direction={"column"}>
+            <FlexWrapper justify={"space-between"}
+                         direction={"column"}>
                 <ThirdTitle title={props.title}/>
                 <StyledEducationWrapper>
                     <EducationUniversity university={props.university}/>
                     <EducationPlace place={props.place}/>
                 </StyledEducationWrapper>
             </FlexWrapper>
-            <FlexWrapper justify={"space-between"} align={"end"} direction={"column"} gap={"10px"}>
+            <StyledEducationInfo>
                 <EducationLevel level={props.level}/>
                 <EducationPeriod period={props.period}/>
-            </FlexWrapper>
+            </StyledEducationInfo>
         </StyledEducationItem>
     );
 };
@@ -41,6 +43,13 @@ const StyledEducationItem = styled.li`
     &:last-child {
         margin-bottom: 0;
     }
+    
+    @media ${Theme.media.mobile} {
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        min-height: 100px;
+    }
 `
 
 const StyledEducationWrapper = styled.div`
@@ -48,4 +57,26 @@ const StyledEducationWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 300px;
+    
+    @media ${Theme.media.tablet} {
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        min-height: 35px;
+    }
+`
+
+const StyledEducationInfo = styled.div`
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    
+    @media ${Theme.media.mobile} {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
 `

@@ -24,4 +24,9 @@ const StyledEducationTIme = styled.span`
     background-color: ${Theme.lightTheme.backgroundColors.accent};
     color: ${Theme.lightTheme.textAccentColors.secondaryAccent};
     border-radius: 20px;
+
+    @media ${Theme.media.mobile} {
+        margin-bottom: 0;
+        order: 1;
+    }
 `

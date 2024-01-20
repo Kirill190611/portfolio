@@ -18,14 +18,18 @@ type ExperienceItemPropsType = {
 export const ExperienceItem = (props: ExperienceItemPropsType) => {
     return (
         <StyledExperienceItem>
-            <FlexWrapper justify={"space-between"} direction={"column"}>
+            <FlexWrapper justify={"space-between"}
+                         direction={"column"}>
                 <ThirdTitle title={props.title}/>
                 <StyledExperienceWrapper>
                     <ExperienceCompany company={props.company}/>
                     <ExperiencePlace place={props.place}/>
                 </StyledExperienceWrapper>
             </FlexWrapper>
-                <FlexWrapper justify={"space-between"} align={"end"} direction={"column"} gap={"10px"}>
+                <FlexWrapper justify={"space-between"}
+                             align={"end"}
+                             direction={"column"}
+                             gap={"10px"}>
                     <ExperienceTime time={props.time}/>
                     <ExperiencePeriod period={props.period}/>
                 </FlexWrapper>
@@ -50,6 +54,10 @@ const StyledExperienceWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     min-width: 300px;
+    
+    @media ${Theme.media.tablet} {
+        min-width: 250px;
+    }
 
     @media ${Theme.media.mobile} {
         flex-direction: column;

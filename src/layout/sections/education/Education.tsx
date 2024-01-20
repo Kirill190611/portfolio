@@ -18,7 +18,8 @@ export const Education = () => {
                                    period={"Sep 2012 - Jun 2016"}/>
                     <EducationItem title={"Information Systems and Technologies"}
                                    university={"KGU K.E. Tsiolkovskogo"}
-                                   place={"Kaluga"} level={"Master degree"}
+                                   place={"Kaluga"}
+                                   level={"Master degree"}
                                    period={"Sep 2019 - Feb 2021"}/>
                 </StyledEducationList>
             </StyledEducation>
