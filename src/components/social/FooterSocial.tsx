@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import {SocialItem} from "./SocialItem";
-import {Theme} from "../../styles/Theme.styled";
 
-export const Social = () => {
+export const FooterSocial = () => {
     return (
         <StyledSocial>
             <StyledSocialList>
@@ -32,10 +31,6 @@ const StyledSocial = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 60px;
-    
-    @media ${Theme.media.tablet} {
-        display: none;
-    }
 `
 
 const StyledSocialList = styled.ul`

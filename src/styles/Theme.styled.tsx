@@ -21,18 +21,6 @@ export const Theme = {
         buttonsColor: {
             primary: "#666666",
             secondary: "#42446E"
-        },
-        fontSize: {
-            primary: "20px",
-            secondary: "18px",
-            primaryAccent: "58px",
-            secondaryAccent: "32px"
-        },
-        titleFontSize: {
-            primary: "58px",
-            secondary: "42px",
-            experienceTitle: "20px",
-            projectsTitle: "28px"
         }
     },
 

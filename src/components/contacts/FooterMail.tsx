@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Theme} from "../../styles/Theme.styled";
+import {font} from "../../styles/Common";
 
 type FooterMailPropsType = {
     mail: string
@@ -12,7 +13,6 @@ export const FooterMail = (props: FooterMailPropsType) => {
 };
 
 const StyledFooterMail = styled.a`
-    font-size: ${Theme.lightTheme.fontSize.secondary};
-    font-weight: 400;
+    ${font({family: "'Jost', sans-serif", weight: 400, Fmax: 18, Fmin: 16})}
     color: ${Theme.lightTheme.textColors.secondary};
 `

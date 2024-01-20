@@ -13,8 +13,8 @@ export const ContactMail = (props: ContactMailPropsType) => {
 };
 
 const StyledContactMail = styled.a`
-    ${font({family: "'Jost', sans-serif", weight: 700, Fmax: 58, Fmin: 26})};
+    ${font({family: "'Jost', sans-serif", weight: 700, Fmax: 58, Fmin: 20})};
     text-align: center;
     color: ${Theme.lightTheme.textAccentColors.primaryAccent};
-    padding: 0 20px;
+    padding: 0 5px;
 `

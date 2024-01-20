@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Theme} from "../../styles/Theme.styled";
+import {font} from "../../styles/Common";
 
 export const FooterDev = () => {
     return (
@@ -9,9 +10,8 @@ export const FooterDev = () => {
 };
 
 const StyledFooterDev = styled.p`
-    font-size: ${Theme.lightTheme.fontSize.secondary};
-    font-weight: 400;
-    align-items: center;
+    ${font({family: "'Jost', sans-serif", weight: 400, Fmax: 18, Fmin: 16})};
+    text-align: right;
 `
 
 const FooterAccentText = styled.span`
