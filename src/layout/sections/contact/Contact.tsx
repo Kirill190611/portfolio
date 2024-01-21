@@ -1,28 +1,21 @@
 import React from 'react';
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {ContactDescription} from "../../../components/descriptions/ContactDescription";
-import {ContactMail} from "../../../components/contacts/ContactMail";
-import styled from "styled-components";
+import {ContactDescription} from "./ContactDescription";
+import {ContactMail} from "./ContactMail";
 import {Container} from "../../../components/Container";
+import {S} from "./Contact_Styles";
 
-export const Contact = () => {
+export const Contact: React.FC = () => {
     return (
         <Container>
-            <ContactSection>
+            <S.ContactSection>
                 <FlexWrapper justify={"center"}
                              align={"center"}
                              direction={"column"}>
                     <ContactDescription content={"For any questions please mail me:"}/>
                     <ContactMail mail={"k.igorevitch88@yandex.ru"}/>
                 </FlexWrapper>
-            </ContactSection>
+            </S.ContactSection>
         </Container>
     );
 };
-
-const ContactSection = styled.section`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30vh;
-`
