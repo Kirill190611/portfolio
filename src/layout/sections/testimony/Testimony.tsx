@@ -1,26 +1,20 @@
 import React from 'react';
-import styled from "styled-components";
 import {SecondTitle} from "../../../components/titles/secondTitle/SecondTitle";
-import {Slider} from "../../../components/slider/Slider";
+import {Slider} from "./slider/Slider";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
+import {S} from "./Testimony_Styles";
 
-export const Testimony = () => {
+export const Testimony: React.FC = () => {
     return (
         <Container>
-            <StyledTestimony>
+            <S.Testimony>
                 <SecondTitle title={"Testimony"}/>
                 <FlexWrapper justify={"center"}
                              align={"center"}>
                     <Slider/>
                 </FlexWrapper>
-            </StyledTestimony>
+            </S.Testimony>
         </Container>
     );
 };
-
-const StyledTestimony = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`
