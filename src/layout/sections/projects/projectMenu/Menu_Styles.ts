@@ -1,23 +1,10 @@
-import React from 'react';
 import styled from "styled-components";
-import {Theme} from "../../styles/Theme.styled";
-import {font} from "../../styles/Common";
+import {font} from "../../../../styles/Common";
+import {Theme} from "../../../../styles/Theme.styled";
 
-export const Menu = (props: {menuItems: Array<string>}) => {
-    return (
-        <StyledMenu>
-            <StyledMenuList>
-                {props.menuItems.map((item,index)=>{
-                    return <MenuItem key={index}>
-                        <MenuLink href={"#"}>{item}</MenuLink>
-                    </MenuItem>
-                })}
-            </StyledMenuList>
-        </StyledMenu>
-    );
-};
+// Project menu styles
 
-const StyledMenu = styled.nav`
+const Menu = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +12,7 @@ const StyledMenu = styled.nav`
     ${font({family: "'Jost', sans-serif", weight: 400, Fmax: 20, Fmin: 16})};
 `
 
-const StyledMenuList = styled.ul`
+const MenuList = styled.ul`
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -71,3 +58,10 @@ const MenuLink = styled.a`
         transition: 0.2s;
     }
 `
+
+export const S = {
+    Menu,
+    MenuList,
+    MenuItem,
+    MenuLink,
+}
