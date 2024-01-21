@@ -1,19 +1,11 @@
 import React from 'react';
-import styled from "styled-components";
-import {Theme} from "../../../styles/Theme.styled";
-import {font} from "../../../styles/Common";
+import {S} from "./Education_Styles";
 
 type EducationPlacePropsType = {
     place: string
 }
-export const EducationPlace = (props: EducationPlacePropsType) => {
+export const EducationPlace: React.FC<EducationPlacePropsType> = (props: EducationPlacePropsType) => {
     return (
-        <StyledEducationPlace>{props.place}</StyledEducationPlace>
+        <S.EducationPlace>{props.place}</S.EducationPlace>
     );
 };
-
-const StyledEducationPlace = styled.span`
-    display: block;
-    ${font({family: "'Jost', sans-serif", weight: 500, Fmax: 12, Fmin: 10})};
-    color: ${Theme.lightTheme.textColors.lightContent};
-`

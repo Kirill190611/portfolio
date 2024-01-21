@@ -1,19 +1,12 @@
 import React from 'react';
-import styled from "styled-components";
-import {Theme} from "../../../styles/Theme.styled";
-import {font} from "../../../styles/Common";
+import {S} from "./Education_Styles";
 
 type EducationUniversityPropsType = {
     university: string
 }
-export const EducationUniversity = (props: EducationUniversityPropsType) => {
+export const EducationUniversity: React.FC<EducationUniversityPropsType> = (props: EducationUniversityPropsType) => {
     return (
-        <StyledEducationUniversity>{props.university}</StyledEducationUniversity>
+        <S.EducationUniversity>{props.university}</S.EducationUniversity>
     );
 };
 
-const StyledEducationUniversity = styled.span`
-    display: block;
-    ${font({family: "'Jost', sans-serif", weight: 500, Fmax: 12, Fmin: 10})};
-    color: ${Theme.lightTheme.textColors.lightContent};
-`

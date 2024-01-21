@@ -1,19 +1,11 @@
 import React from 'react';
-import styled from "styled-components";
-import {Theme} from "../../../styles/Theme.styled";
-import {font} from "../../../styles/Common";
+import {S} from "./Education_Styles";
 
 type EducationPeriodPropsType = {
     period: string
 }
-export const EducationPeriod = (props: EducationPeriodPropsType) => {
+export const EducationPeriod: React.FC<EducationPeriodPropsType> = (props: EducationPeriodPropsType) => {
     return (
-        <StyledEducationPeriod>{props.period}</StyledEducationPeriod>
+        <S.EducationPeriod>{props.period}</S.EducationPeriod>
     );
 };
-
-const StyledEducationPeriod = styled.p`
-    display: block;
-    ${font({family: "'Jost', sans-serif", weight: 500, Fmax: 12, Fmin: 10})};
-    color: ${Theme.lightTheme.textColors.lightContent};
-`
