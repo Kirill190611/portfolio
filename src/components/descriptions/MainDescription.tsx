@@ -1,29 +1,11 @@
 import React from 'react';
-import styled from "styled-components";
-import {Theme} from "../../styles/Theme.styled";
-import {font} from "../../styles/Common";
+import {S} from "./Description_Styles";
 
 type MainDescriptionPropsType = {
     description: string
 }
-export const MainDescription = (props: MainDescriptionPropsType) => {
+export const MainDescription: React.FC<MainDescriptionPropsType> = (props: MainDescriptionPropsType) => {
     return (
-        <StyledMainDescription>{props.description}</StyledMainDescription>
+        <S.StyledMainDescription>{props.description}</S.StyledMainDescription>
     );
 };
-
-const StyledMainDescription = styled.p`
-    ${font({family: "'Jost', sans-serif", weight: 400, Fmax: 32, Fmin: 24})};
-    color: ${Theme.lightTheme.textColors.primary};
-    margin-bottom: 25px;
-    text-align: center;
-    padding: 0 10px;
-    
-    @media ${Theme.media.tablet} {
-        margin-bottom: 20px;
-    }
-
-    @media ${Theme.media.mobile} {
-        margin-bottom: 15px;
-    }
-`

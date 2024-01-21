@@ -92,6 +92,7 @@ const EducationLevel = styled.span`
     @media ${Theme.media.mobile} {
         margin-bottom: 0;
         order: 1;
+        
     }
 `
 

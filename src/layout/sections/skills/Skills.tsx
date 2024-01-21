@@ -2,60 +2,79 @@ import React from 'react';
 import {SecondTitle} from "../../../components/titles/secondTitle/SecondTitle";
 import {MainDescription} from "../../../components/descriptions/MainDescription";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import styled from "styled-components";
 import {Skill} from "./Skill";
 import {Container} from "../../../components/Container";
+import {S} from "./Skills_Styles";
 
-export const Skills = () => {
+const skillsData = [
+    {
+        iconID: "htmlIcon",
+        title: "HTML5",
+        viewBox: "0 0 120 120",
+    },
+    {
+        iconID: "cssIcon",
+        title: "CSS3",
+        viewBox: "0 0 120 120"
+    },
+    {
+        iconID: "jsIcon",
+        title: "JavaScript",
+        viewBox: "7 7 105 105",
+    },
+    {
+        iconID: "reactIcon",
+        title: "React",
+        viewBox: "-2 -8 116 116",
+    },
+    {
+        iconID: "sassIcon",
+        title: "SASS",
+        viewBox: "-2 -15 120 120",
+    },
+    {
+        iconID: "typescriptIcon",
+        title: "TypeScript",
+        viewBox: "0 0 120 120"
+    },
+    {
+        iconID: "styledcomponentsIcon",
+        title: "SC",
+        viewBox: "0 0 120 120",
+    },
+    {
+        iconID: "gitIcon",
+        title: "Git",
+        viewBox: "-8 -8 120 120",
+    },
+    {
+        iconID: "githubIcon",
+        title: "GitHub",
+        viewBox: "-17 -17 120 120",
+    },
+]
+
+export const Skills: React.FC = () => {
     return (
         <Container>
-            <StyledSkills>
+            <S.StyledSkills>
                 <FlexWrapper direction={"column"}
                              justify={"space-between"}
                              align={"center"}>
                     <SecondTitle title={"My Tech Stack"}/>
                     <MainDescription description={"Technologies I’ve been working with recently"}/>
-                    <StyledSkillsContainer>
-                        <Skill iconId={"htmlIcon"}
-                               title={"HTML5"}/>
-                        <Skill iconId={"cssIcon"}
-                               title={"CSS3"}/>
-                        <Skill iconId={"jsIcon"}
-                               viewBox={"7 7 105 105"}
-                               title={"JavaScript"}/>
-                        <Skill iconId={"reactIcon"}
-                               viewBox={"-2 -8 116 116"}
-                               title={"React"}/>
-                        <Skill iconId={"sassIcon"}
-                               viewBox={"-2 -15 120 120"}
-                               title={"SASS"}/>
-                        <Skill iconId={"typescriptIcon"}
-                               title={"TypeScript"}/>
-                        <Skill iconId={"styledcomponentsIcon"}
-                               title={"SC"}/>
-                        <Skill iconId={"gitIcon"}
-                               viewBox={"-8 -8 120 120"}
-                               title={"Git"}/>
-                        <Skill iconId={"githubIcon"}
-                               viewBox={"-17 -17 120 120"}
-                               title={"GitHub"}/>
-                    </StyledSkillsContainer>
+                    <S.SkillsContainer>
+
+                        {skillsData.map((s, index) => {
+                            return <Skill iconId={s.iconID}
+                                          title={s.title}
+                                          viewBox={s.viewBox}
+                                          key={index}/>
+                        })}
+
+                    </S.SkillsContainer>
                 </FlexWrapper>
-            </StyledSkills>
+            </S.StyledSkills>
         </Container>
     );
 };
-
-const StyledSkills = styled.section`
-    
-`
-
-const StyledSkillsContainer = styled.ul`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 120px));
-    grid-auto-rows: minmax(120px, 160px);
-    gap: 45px 60px;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-`

@@ -42,3 +42,4 @@ export const Education: React.FC = () => {
         </Container>
     );
 };
+

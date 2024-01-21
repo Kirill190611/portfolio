@@ -8,7 +8,7 @@ type SkillsIconPropsType = {
     viewBox?: string
 }
 
-export const SkillsIcon = (props: SkillsIconPropsType) => {
+export const SkillsIcon: React.FC<SkillsIconPropsType> = (props: SkillsIconPropsType) => {
     return (
         <svg width={props.width || "120"} height={props.height || "120"} viewBox={props.viewBox || "0 0 120 120"}
              xmlns="http://www.w3.org/2000/svg">
