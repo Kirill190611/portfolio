@@ -1,42 +1,38 @@
 import React from 'react';
-import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {Social} from "../../components/social/Social";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {MobileMenu} from "../../components/menu/ModileMenu";
-import {Theme} from "../../styles/Theme.styled";
-import {HeaderMenu} from "../../components/menu/HeaderMenu";
+import {MobileMenu} from "./headerMenu/mobileMenu/ModileMenu";
+import {DesktopMenu} from "./headerMenu/desktopMenu/DesktopMenu";
+import {S} from "./Header_Styles";
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
-export const Header = () => {
+export const Header: React.FC = () => {
+
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 768;
+
+    React.useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
+
     return (
-        <StyledHeader>
+        <S.StyledHeader>
             <Container>
                 <FlexWrapper justify={"space-between"}
                              align={"center"}
                              wrap={"wrap"}>
                     <Logo/>
-                    <HeaderMenu menuItems={items}/>
-                    <MobileMenu menuItems={items}/>
+
+                    {width <= breakpoint ? <MobileMenu menuItems={items}/>
+                                         : <DesktopMenu menuItems={items}/>}
+
                     <Social/>
                 </FlexWrapper>
             </Container>
-        </StyledHeader>
+        </S.StyledHeader>
     );
 };
-
-const StyledHeader = styled.header`
-    font-weight: normal;
-    font-style: normal;
-    min-height: 70px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 15px 0;
-    
-    @media ${Theme.media.mobile} {
-        padding: 10px 0;
-    }
-`

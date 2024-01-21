@@ -1,17 +1,11 @@
 import React from 'react';
 import {Icon} from "../icon/Icon";
-import styled from "styled-components";
+import {S} from "./Logo_Styles";
 
-export const Logo = () => {
+export const Logo: React.FC = () => {
     return (
-        <StyledLogoLink href={"#"}>
+        <S.LogoLink href={"#"}>
             <Icon iconId={'logoIcon'}/>
-        </StyledLogoLink>
+        </S.LogoLink>
     );
 };
-
-const StyledLogoLink = styled.a`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`

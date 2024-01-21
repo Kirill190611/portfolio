@@ -1,35 +1,19 @@
-import React from 'react';
 import styled, {css} from "styled-components";
-import {Theme} from "../../styles/Theme.styled";
+import {Theme} from "../../../styles/Theme.styled";
 
-export const MobileMenu = (props: {menuItems: Array<string>}) => {
-    return (
-        <StyledMobileMenu>
-            <BurgerButton isOpen={false}>
-                <span></span>
-            </BurgerButton>
-            <MobileMenuPopup isOpen={false}>
-                <StyledMenuList>
-                    {props.menuItems.map((item,index)=>{
-                        return <MenuItem key={index}>
-                            <MenuLink href={"#"}>{item}</MenuLink>
-                        </MenuItem>
-                    })}
-                </StyledMenuList>
-            </MobileMenuPopup>
-        </StyledMobileMenu>
-    );
-};
+// Styles for Desktop Menu
+
+const StyledDesktopMenu = styled.nav`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+`
+
+// Styles for Mobile Menu
 
 const StyledMobileMenu = styled.nav`
-    display: none;
-    
-    @media ${Theme.media.tablet} {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 60px;
-    }
+
 `
 
 const BurgerButton = styled.button<{isOpen: boolean}>`
@@ -103,14 +87,14 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
     `}
 `
 
-const StyledMenuList = styled.ul`
+// Styles for Menu
+
+const MenuList = styled.ul`
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     gap: 10px;
+    flex-wrap: wrap;
     max-width: 635px;
+    min-height: 60px;
 `
 
 const MenuItem = styled.li`
@@ -141,3 +125,13 @@ const MenuLink = styled.a`
         transition: 0.2s;
     }
 `
+
+export const S = {
+    StyledDesktopMenu,
+    StyledMobileMenu,
+    BurgerButton,
+    MobileMenuPopup,
+    MenuList,
+    MenuItem,
+    MenuLink
+}

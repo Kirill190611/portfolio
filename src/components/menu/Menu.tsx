@@ -22,7 +22,7 @@ const StyledMenu = styled.nav`
     justify-content: center;
     align-items: center;
     min-height: 60px;
-    ${font({family: "'Jost', sans-serif", weight: 400, Fmax: 20, Fmin: 18})};
+    ${font({family: "'Jost', sans-serif", weight: 400, Fmax: 20, Fmin: 16})};
 `
 
 const StyledMenuList = styled.ul`
@@ -34,6 +34,8 @@ const StyledMenuList = styled.ul`
 
     @media ${Theme.media.mobile} {
         min-height: 40px;
+        justify-content: center;
+        align-items: center;
     }
 `
 
