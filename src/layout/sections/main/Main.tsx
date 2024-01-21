@@ -9,21 +9,19 @@ import {Contact} from "../contact/Contact";
 import {Testimony} from "../testimony/Testimony";
 import {Promo} from "../promo/Promo";
 
-export const Main = () => {
+export const Main: React.FC = () => {
     return (
-        <div>
-            <FlexWrapper justify={"space-between"}
-                         direction={"column"}>
-                <Promo/>
-                <About/>
-                <Experience/>
-                <Education/>
-                <Skills/>
-                <Projects/>
-                <Testimony/>
-                <Contact/>
-            </FlexWrapper>
-        </div>
+        <FlexWrapper justify={"space-between"}
+                     direction={"column"}>
+            <Promo/>
+            <About/>
+            <Experience/>
+            <Education/>
+            <Skills/>
+            <Projects/>
+            <Testimony/>
+            <Contact/>
+        </FlexWrapper>
     );
 
 };
