@@ -1,5 +1,5 @@
 import React from 'react';
-import {MainTitle} from "../../../components/titles/MainTitle";
+import {MainTitle} from "../../../components/titles/mainTitle/MainTitle";
 import photo from "../../../assets/images/photo.jpg";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";

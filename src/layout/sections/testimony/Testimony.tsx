@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {SecondTitle} from "../../../components/titles/SecondTitle";
+import {SecondTitle} from "../../../components/titles/secondTitle/SecondTitle";
 import {Slider} from "../../../components/slider/Slider";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";

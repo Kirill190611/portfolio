@@ -1,5 +1,5 @@
 import React from 'react';
-import {SecondTitle} from "../../../components/titles/SecondTitle";
+import {SecondTitle} from "../../../components/titles/secondTitle/SecondTitle";
 import styled from "styled-components";
 import {EducationItem} from "./EducationItem";
 import {Container} from "../../../components/Container";
