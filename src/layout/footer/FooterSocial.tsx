@@ -1,6 +1,6 @@
 import React from 'react';
-import {SocialItem} from "./SocialItem";
-import {S} from "./Social_Styles";
+import {SocialItem} from "../../components/social/SocialItem";
+import {S} from "./Footer_Styles";
 
 const socialData = [
     {
@@ -26,10 +26,10 @@ const socialData = [
     },
 ]
 
-export const Social: React.FC = () => {
+export const FooterSocial: React.FC = () => {
     return (
-        <S.Social>
-            <S.SocialList>
+        <S.FooterSocial>
+            <S.FooterSocialList>
 
                 {socialData.map((s,index) => {
                     return <SocialItem iconId={s.iconID}
@@ -40,7 +40,8 @@ export const Social: React.FC = () => {
                                        key={index}/>
                 })}
 
-            </S.SocialList>
-        </S.Social>
+            </S.FooterSocialList>
+        </S.FooterSocial>
     );
 };
+

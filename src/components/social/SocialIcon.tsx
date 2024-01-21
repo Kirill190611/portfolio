@@ -7,7 +7,7 @@ type SocialIconPropsType = {
     height?: string
     viewBox?: string
 }
-export const SocialIcon = (props: SocialIconPropsType) => {
+export const SocialIcon: React.FC<SocialIconPropsType> = (props: SocialIconPropsType) => {
     return (
         <svg width={props.width || "120"} height={props.height || "120"} viewBox={props.viewBox || "0 0 120 120"}
              xmlns="http://www.w3.org/2000/svg">
