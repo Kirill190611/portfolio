@@ -1,27 +1,11 @@
 import React from 'react';
-import styled from "styled-components";
-import {Theme} from "../../../styles/Theme.styled";
+import {S} from "./Experience_Styles";
 
 type ExperienceTimePropsType = {
     time: string
 }
-export const ExperienceTime = (props: ExperienceTimePropsType) => {
+export const ExperienceTime: React.FC<ExperienceTimePropsType> = (props: ExperienceTimePropsType) => {
     return (
-        <StyledExperienceTIme>{props.time}</StyledExperienceTIme>
+        <S.ExperienceTIme>{props.time}</S.ExperienceTIme>
     );
 };
-
-const StyledExperienceTIme = styled.span`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 84px;
-    min-height: 24px;
-    font-size: 12px;
-    padding: 2px 5px;
-    margin-bottom: 10px;
-    font-weight: 500;
-    background-color: ${Theme.lightTheme.backgroundColors.accent};
-    color: ${Theme.lightTheme.textAccentColors.secondaryAccent};
-    border-radius: 20px;
-`

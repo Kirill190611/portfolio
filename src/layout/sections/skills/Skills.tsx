@@ -4,8 +4,6 @@ import {MainDescription} from "../../../components/descriptions/MainDescription"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import styled from "styled-components";
 import {Skill} from "./Skill";
-import {ThirdTitle} from "../../../components/titles/thirdTitle/ThirdTitle";
-import {SkillDescription} from "./SkillDescription";
 import {Container} from "../../../components/Container";
 
 export const Skills = () => {

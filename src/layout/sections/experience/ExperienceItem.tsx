@@ -1,12 +1,11 @@
 import React from 'react';
-import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {ThirdTitle} from "../../../components/titles/thirdTitle/ThirdTitle";
 import {ExperienceCompany} from "./ExperienceCompany";
 import {ExperiencePlace} from "./ExperiencePlace";
 import {ExperienceTime} from "./ExperienceTime";
 import {ExperiencePeriod} from "./ExperiencePeriod";
-import {Theme} from "../../../styles/Theme.styled";
+import {S} from "./Experience_Styles";
 
 type ExperienceItemPropsType = {
     title: string
@@ -15,16 +14,16 @@ type ExperienceItemPropsType = {
     time: string
     period: string
 }
-export const ExperienceItem = (props: ExperienceItemPropsType) => {
+export const ExperienceItem: React.FC<ExperienceItemPropsType> = (props: ExperienceItemPropsType) => {
     return (
-        <StyledExperienceItem>
+        <S.StyledExperienceItem>
             <FlexWrapper justify={"space-between"}
                          direction={"column"}>
                 <ThirdTitle title={props.title}/>
-                <StyledExperienceWrapper>
+                <S.ExperienceWrapper>
                     <ExperienceCompany company={props.company}/>
                     <ExperiencePlace place={props.place}/>
-                </StyledExperienceWrapper>
+                </S.ExperienceWrapper>
             </FlexWrapper>
                 <FlexWrapper justify={"space-between"}
                              align={"end"}
@@ -33,37 +32,6 @@ export const ExperienceItem = (props: ExperienceItemPropsType) => {
                     <ExperienceTime time={props.time}/>
                     <ExperiencePeriod period={props.period}/>
                 </FlexWrapper>
-        </StyledExperienceItem>
+        </S.StyledExperienceItem>
     );
 };
-
-
-const StyledExperienceItem = styled.li`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    
-    &:last-child {
-        margin-bottom: 0;
-    }
-`
-
-const StyledExperienceWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 300px;
-    
-    @media ${Theme.media.tablet} {
-        min-width: 250px;
-    }
-
-    @media ${Theme.media.mobile} {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: start;
-        min-width: 150px;
-        min-height: 35px;
-    }
-`

@@ -4,7 +4,7 @@ import {S} from "./ThirdTitle_Styles";
 type ThirdTitlePropsType = {
     title: string
 }
-export const ThirdTitle = (props: ThirdTitlePropsType) => {
+export const ThirdTitle: React.FC<ThirdTitlePropsType> = (props: ThirdTitlePropsType) => {
     return (
         <S.StyledThirdTitle>{props.title}</S.StyledThirdTitle>
     );
