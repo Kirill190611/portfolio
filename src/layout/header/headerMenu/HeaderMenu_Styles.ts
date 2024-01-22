@@ -114,15 +114,20 @@ const MenuLink = styled.a`
     color: inherit;
     position: relative;
     
-    &:hover:after {
+    &::after {
         position: absolute;
         content: "";
         display: block;
+        width: 0;
         border-bottom: 3px solid ${Theme.lightTheme.textAccentColors.primaryAccent};
         bottom: 0;
         left: 0;
         right: 0;
-        transition: 0.2s;
+    }
+    
+    &:hover::after {
+        width: 100%;
+        transition: 0.5s;
     }
 `
 

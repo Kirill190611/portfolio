@@ -42,6 +42,8 @@ const SocialLink = styled.a`
     &:hover {
         stroke: ${Theme.lightTheme.textAccentColors.primaryAccent};
         fill: ${Theme.lightTheme.textAccentColors.primaryAccent};
+        transform: translateY(-4px);
+        transition: 0.2s;
     }
 `
 

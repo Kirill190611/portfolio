@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {Theme} from "../../../styles/Theme.styled";
 import {font} from "../../../styles/Common";
+import photo1 from "../../../assets/images/abstract.png";
 
 const PhotoWrapper = styled.div`
     display: flex;
@@ -10,6 +11,17 @@ const PhotoWrapper = styled.div`
     height: 350px;
     background: linear-gradient(#E70FAA, #00C0FD);
     border-radius: 50%;
+    position: relative;
+    
+    &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 770px;
+        height: 770px;
+        z-index: -1;
+        background: url(${photo1}) no-repeat;
+    }
 
     @media ${Theme.media.mobile} {
         width: 320px;
@@ -40,7 +52,7 @@ const AccentText = styled.span`
 `
 
 const TextContainer = styled.div`
-    max-width: 500px;
+    max-width: 600px;
 `
 
 export const S = {
