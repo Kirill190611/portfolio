@@ -66,6 +66,7 @@ export const GlobalStyled = createGlobalStyle`
         background-color: ${Theme.lightTheme.backgroundColors.primary};
         font-size: 20px;
         line-height: 1.2;
+        min-width: 320px;
     }
     
     section {

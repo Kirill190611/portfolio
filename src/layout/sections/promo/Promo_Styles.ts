@@ -1,44 +1,46 @@
 import styled from "styled-components";
 import {Theme} from "../../../styles/Theme.styled";
 import {font} from "../../../styles/Common";
-import photo1 from "../../../assets/images/abstract.png";
+import {FlexWrapper} from "../../../components/FlexWrapper";
+
+const Promo = styled.section`
+    
+    @media ${Theme.media.mobile} {
+        ${FlexWrapper} {
+            height: 40vh;
+        }
+    }
+`
 
 const PhotoWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 350px;
     width: 350px;
     height: 350px;
     background: linear-gradient(#E70FAA, #00C0FD);
     border-radius: 50%;
-    position: relative;
-    
-    &::after {
-        display: block;
-        content: "";
-        position: absolute;
-        width: 770px;
-        height: 770px;
-        z-index: -1;
-        background: url(${photo1}) no-repeat;
-    }
 
     @media ${Theme.media.mobile} {
-        width: 320px;
-        height: 320px;
+        min-width: 300px;
+        width: 300px;
+        height: 300px;
     }
 `
 
 const Photo = styled.img`
     display: block;
+    min-width: 330px;
     width: 330px;
     height: 330px;
     object-fit: cover;
     border-radius: 50%;
     
     @media ${Theme.media.mobile} {
-        width: 300px;
-        height: 300px;
+        min-width: 280px;
+        width: 280px;
+        height: 280px;
     }
 `
 
@@ -56,6 +58,7 @@ const TextContainer = styled.div`
 `
 
 export const S = {
+    Promo,
     PhotoWrapper,
     Photo,
     PromoText,

@@ -10,7 +10,7 @@ const StyledHeader = styled.header`
     left: 0;
     right: 0;
     padding: 15px 0;
-    
+
     @media ${Theme.media.mobile} {
         padding: 10px 0;
     }
