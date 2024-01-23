@@ -95,6 +95,10 @@ const MenuList = styled.ul`
     flex-wrap: wrap;
     max-width: 635px;
     min-height: 60px;
+    
+    @media ${Theme.media.tablet} {
+        flex-direction: column;
+    }
 `
 
 const MenuItem = styled.li`
@@ -102,6 +106,10 @@ const MenuItem = styled.li`
     align-items: center;
     justify-content: center;
     min-width: 95px;
+
+    @media ${Theme.media.tablet} {
+        min-height: 60px;
+    }
 `
 
 const MenuLink = styled.a`
@@ -109,6 +117,7 @@ const MenuLink = styled.a`
     align-items: center;
     justify-content: center;
     width: 100%;
+    min-height: 60px;
     height: 100%;
     font-family: inherit;
     color: inherit;

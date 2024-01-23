@@ -62,8 +62,8 @@ const projectsData = [
 
 export const Projects: React.FC = () => {
     return (
-        <Container>
-            <S.StyledProjects>
+        <S.StyledProjects>
+            <Container>
                 <FlexWrapper direction={"column"}
                              justify={"space-between"}
                              align={"center"}>
@@ -83,7 +83,7 @@ export const Projects: React.FC = () => {
 
                     </S.ProjectsContainer>
                 </FlexWrapper>
-            </S.StyledProjects>
-        </Container>
+            </Container>
+        </S.StyledProjects>
     );
 };

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Theme} from "../../styles/Theme.styled";
+import {Container} from "../../components/Container";
 
 const StyledHeader = styled.header`
     font-weight: normal;
