@@ -7,6 +7,7 @@ const Slider = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid;
 `
 
 const SliderWrapper = styled.div`
@@ -16,6 +17,7 @@ const SliderWrapper = styled.div`
     max-width: 450px;
     width: 100%;
     margin-bottom: 35px;
+    border: 1px solid;
 `
 
 const Pagination = styled.div`

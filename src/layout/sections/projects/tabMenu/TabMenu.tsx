@@ -8,7 +8,7 @@ type TabMenuPropsType = {
     changeFilterStatus: (value: TabsStatusType) => void
     currentFilterStatus: string
 }
-export const TabMenu = (props: TabMenuPropsType) => {
+export const TabMenu: React.FC<TabMenuPropsType> = (props: TabMenuPropsType) => {
     return (
         <S.TabMenu>
             <S.TabMenuList>
