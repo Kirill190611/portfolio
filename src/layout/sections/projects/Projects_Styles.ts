@@ -14,6 +14,7 @@ const ProjectsContainer = styled.div`
     width: 100%;
     align-content: center;
     justify-content: center;
+    padding: 10px 0 0;
 `
 
 // Project styles
@@ -62,6 +63,7 @@ const ProjectTile = styled.h4`
 
 const ProjectDescription = styled.p`
     ${font({family: "'Jost', sens-serif", weight: 500, Fmax: 18, Fmin: 16})};
+    text-align: left;
 `
 
 // Project stack description styles

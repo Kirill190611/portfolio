@@ -55,6 +55,7 @@ const AccentText = styled.span`
 
 const TextContainer = styled.div`
     max-width: 600px;
+    text-align: left;
 `
 
 export const S = {
