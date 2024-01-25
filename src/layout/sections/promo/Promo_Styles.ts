@@ -3,8 +3,7 @@ import {Theme} from "../../../styles/Theme.styled";
 import {font} from "../../../styles/Common";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
-const Promo = styled.section`
-    
+const Promo = styled.section`    
     @media ${Theme.media.mobile} {
         ${FlexWrapper} {
             height: 40vh;
