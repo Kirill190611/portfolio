@@ -10,10 +10,7 @@ export const Testimony: React.FC = () => {
         <Container>
             <S.Testimony>
                 <SecondTitle title={"Testimony"}/>
-                <FlexWrapper justify={"center"}
-                             align={"center"}>
-                    <Slider/>
-                </FlexWrapper>
+                <Slider/>
             </S.Testimony>
         </Container>
     );
