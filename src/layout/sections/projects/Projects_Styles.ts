@@ -6,7 +6,9 @@ import gitIcon from "../../../assets/images/icons/github-fill.svg";
 
 // Projects styles
 
-const StyledProjects = styled.section``
+const StyledProjects = styled.section`
+    position: relative;
+`
 
 const ProjectsContainer = styled.div`
     display: grid;

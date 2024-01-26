@@ -56,8 +56,8 @@ const skillsData = [
 
 export const Skills: React.FC = () => {
     return (
-        <Container>
-            <S.StyledSkills>
+        <S.StyledSkills>
+            <Container>
                 <FlexWrapper direction={"column"}
                              justify={"space-between"}
                              align={"center"}>
@@ -74,7 +74,7 @@ export const Skills: React.FC = () => {
 
                     </S.SkillsContainer>
                 </FlexWrapper>
-            </S.StyledSkills>
-        </Container>
+            </Container>
+        </S.StyledSkills>
     );
 };

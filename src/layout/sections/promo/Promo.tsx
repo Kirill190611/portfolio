@@ -5,11 +5,12 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {S} from "./Promo_Styles";
 import Typewriter from "typewriter-effect";
+import Tilt from "react-parallax-tilt";
 
 export const Promo: React.FC = () => {
     return (
-        <Container>
-            <S.Promo>
+        <S.Promo>
+            <Container>
                 <FlexWrapper justify={"space-around"}
                              align={"center"}
                              height={"60vh"}
@@ -28,12 +29,19 @@ export const Promo: React.FC = () => {
                                 }}/>
                         </MainTitle>
                     </S.TextContainer>
-                    <S.PhotoWrapper>
-                        <S.Photo src={photo}
-                                 alt={"It's me"}/>
-                    </S.PhotoWrapper>
+                    <Tilt tiltEnable={false}
+                          glareEnable={true}
+                          glareMaxOpacity={0.8}
+                          glareColor="white"
+                          glarePosition="bottom"
+                          glareBorderRadius="20px">
+                        <S.PhotoWrapper>
+                            <S.Photo src={photo}
+                                     alt={"It's me"}/>
+                        </S.PhotoWrapper>
+                    </Tilt>
                 </FlexWrapper>
-            </S.Promo>
-        </Container>
+            </Container>
+        </S.Promo>
     );
 };

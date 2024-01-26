@@ -13,7 +13,7 @@ import {Container} from "../../../components/Container";
 import {S} from "./Projects_Styles";
 import {TabMenu, TabsStatusType} from "./tabMenu/TabMenu";
 
-const tabsItems: Array<{status: TabsStatusType, title: string}> = [
+const tabsItems: Array<{ status: TabsStatusType, title: string }> = [
     {
         title: "All",
         status: "all",
@@ -99,7 +99,7 @@ export const Projects: React.FC = () => {
         filteredProjects = projectsData.filter(project => project.type === "spa")
     }
 
-    function changeFilterStatus (value: TabsStatusType) {
+    function changeFilterStatus(value: TabsStatusType) {
         setCurrentFilterStatus(value)
     }
 
@@ -115,16 +115,16 @@ export const Projects: React.FC = () => {
                              changeFilterStatus={changeFilterStatus}
                              currentFilterStatus={currentFilterStatus}/>
                     <S.ProjectsContainer>
-
                         {filteredProjects.map((p, index) => {
-                            return <Project title={p.title}
-                                            description={p.description}
-                                            stack={p.stack}
-                                            src={p.src}
-                                            alt={p.alt}
-                                            key={index}/>
+                            return (
+                                <Project title={p.title}
+                                         description={p.description}
+                                         stack={p.stack}
+                                         src={p.src}
+                                         alt={p.alt}
+                                         key={index}/>
+                            );
                         })}
-
                     </S.ProjectsContainer>
                 </FlexWrapper>
             </Container>

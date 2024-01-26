@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Skills styles
 
 const StyledSkills = styled.section`
-
+    position: relative;
 `
 
 const SkillsContainer = styled.ul`

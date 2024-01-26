@@ -1,17 +1,19 @@
 import React from 'react';
 import {SecondTitle} from "../../../components/titles/secondTitle/SecondTitle";
 import {Slider} from "./slider/Slider";
-import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {S} from "./Testimony_Styles";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 
 export const Testimony: React.FC = () => {
     return (
-        <Container>
-            <S.Testimony>
-                <SecondTitle title={"Testimony"}/>
-                <Slider/>
-            </S.Testimony>
-        </Container>
+        <S.Testimony>
+            <Container>
+                <FlexWrapper align={"center"} direction={"column"}>
+                    <SecondTitle title={"Testimony"}/>
+                    <Slider/>
+                </FlexWrapper>
+            </Container>
+        </S.Testimony>
     );
 };

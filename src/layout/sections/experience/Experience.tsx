@@ -29,8 +29,8 @@ const experienceData = [
 ]
 export const Experience: React.FC = () => {
     return (
-        <Container>
-            <S.StyledExperience>
+        <S.StyledExperience>
+            <Container>
                 <SecondTitle title={"Work Experience"}/>
                 <S.ExperienceList>
 
@@ -44,7 +44,7 @@ export const Experience: React.FC = () => {
                     })}
 
                 </S.ExperienceList>
-            </S.StyledExperience>
-        </Container>
+            </Container>
+        </S.StyledExperience>
     );
 };

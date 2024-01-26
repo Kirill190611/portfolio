@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {Theme} from "../../styles/Theme.styled";
-import {Container} from "../../components/Container";
 
 const StyledHeader = styled.header`
     font-weight: normal;
@@ -11,6 +10,7 @@ const StyledHeader = styled.header`
     left: 0;
     right: 0;
     padding: 15px 0;
+    z-index: 1000000;
 
     @media ${Theme.media.mobile} {
         padding: 10px 0;

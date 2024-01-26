@@ -4,7 +4,10 @@ import {font} from "../../../styles/Common";
 
 // Experience styles
 
-const StyledExperience = styled.section``
+const StyledExperience = styled.section`
+    position: relative;
+`
+
 const ExperienceList = styled.ul``
 
 // Experience item styles

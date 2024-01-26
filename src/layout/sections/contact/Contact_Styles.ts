@@ -9,6 +9,7 @@ const ContactSection = styled.section`
     align-items: center;
     justify-content: center;
     height: 30vh;
+    position: relative;
 `
 
 // Contact description styles

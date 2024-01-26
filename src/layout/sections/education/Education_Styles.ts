@@ -4,7 +4,9 @@ import {font} from "../../../styles/Common";
 
 // Education styles
 
-const StyledEducation = styled.section``
+const StyledEducation = styled.section`
+    position: relative;
+`
 
 const EducationList = styled.ul``
 

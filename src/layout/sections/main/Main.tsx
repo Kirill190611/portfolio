@@ -8,11 +8,13 @@ import {Projects} from "../projects/Projects";
 import {Contact} from "../contact/Contact";
 import {Testimony} from "../testimony/Testimony";
 import {Promo} from "../promo/Promo";
+import {Particle} from "../../../components/particle/Particle";
 
 export const Main: React.FC = () => {
     return (
         <FlexWrapper justify={"space-between"}
                      direction={"column"}>
+            <Particle/>
             <Promo/>
             <About/>
             <Experience/>

@@ -23,8 +23,8 @@ const educationData = [
 
 export const Education: React.FC = () => {
     return (
-        <Container>
-            <S.StyledEducation>
+        <S.StyledEducation>
+            <Container>
                 <SecondTitle title={"Education"}/>
                 <S.EducationList>
 
@@ -38,8 +38,8 @@ export const Education: React.FC = () => {
                     })}
 
                 </S.EducationList>
-            </S.StyledEducation>
-        </Container>
+            </Container>
+        </S.StyledEducation>
     );
 };
 
