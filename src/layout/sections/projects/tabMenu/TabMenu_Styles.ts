@@ -48,10 +48,6 @@ const TabMenuLink = styled.button<{active?: boolean}>`
     color: inherit;
     position: relative;
 
-    ${props => props.active && css<{active?: boolean}>`
-        transform: translateY(-4px);
-    `}
-
     &::after {
         position: absolute;
         content: "";
@@ -69,6 +65,11 @@ const TabMenuLink = styled.button<{active?: boolean}>`
 
     &:hover::after {
         width: 100%;
+        transition: 0.5s;
+    }
+    
+    &:hover {
+        transform: translateY(-4px);
         transition: 0.5s;
     }
 `

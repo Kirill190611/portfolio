@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import {Theme} from "../../../styles/Theme.styled";
 import {font} from "../../../styles/Common";
+import chainIcon from "../../../assets/images/icons/chain.svg";
+import gitIcon from "../../../assets/images/icons/github-fill.svg";
 
 // Projects styles
 
@@ -47,7 +49,7 @@ const ButtonsWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 5px;
+    padding: 0 20px;
 `
 
 // Project title styles
@@ -85,6 +87,28 @@ const ButtonsProject = styled.a`
     justify-content: center;
     ${font({family: "'Jost', sans-serif", weight: 400, Fmax: 16, Fmin: 15})};
     color: ${Theme.lightTheme.buttonsColor.primary};
+    position: relative;
+    
+    &:before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        content: "";
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        top: -1px;
+        left: -25px;
+    }
+    
+    &:first-child:before {
+        background: url(${chainIcon}) center no-repeat;
+    }
+    
+    &:last-child:before {
+        background: url(${gitIcon}) center no-repeat;
+    }
 `
 
 // Image project styles
