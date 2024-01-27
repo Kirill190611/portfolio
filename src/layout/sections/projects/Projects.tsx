@@ -12,6 +12,7 @@ import projectImage6 from "../../../assets/images/project-images/project-6.webp"
 import {Container} from "../../../components/Container";
 import {S} from "./Projects_Styles";
 import {TabMenu, TabsStatusType} from "./tabMenu/TabMenu";
+import {Fade} from "react-awesome-reveal";
 
 const tabsItems: Array<{ status: TabsStatusType, title: string }> = [
     {
@@ -105,29 +106,31 @@ export const Projects: React.FC = () => {
 
     return (
         <S.StyledProjects id={"projects"}>
-            <Container>
-                <FlexWrapper direction={"column"}
-                             justify={"space-between"}
-                             align={"center"}>
-                    <SecondTitle title={"Projects"}/>
-                    <MainDescription description={"Things I’ve built so far"}/>
-                    <TabMenu tabsItems={tabsItems}
-                             changeFilterStatus={changeFilterStatus}
-                             currentFilterStatus={currentFilterStatus}/>
-                    <S.ProjectsContainer>
-                        {filteredProjects.map((p, index) => {
-                            return (
-                                <Project title={p.title}
-                                         description={p.description}
-                                         stack={p.stack}
-                                         src={p.src}
-                                         alt={p.alt}
-                                         key={index}/>
-                            );
-                        })}
-                    </S.ProjectsContainer>
-                </FlexWrapper>
-            </Container>
+            <Fade>
+                <Container>
+                    <FlexWrapper direction={"column"}
+                                 justify={"space-between"}
+                                 align={"center"}>
+                        <SecondTitle title={"Projects"}/>
+                        <MainDescription description={"Things I’ve built so far"}/>
+                        <TabMenu tabsItems={tabsItems}
+                                 changeFilterStatus={changeFilterStatus}
+                                 currentFilterStatus={currentFilterStatus}/>
+                        <S.ProjectsContainer>
+                            {filteredProjects.map((p, index) => {
+                                return (
+                                    <Project title={p.title}
+                                             description={p.description}
+                                             stack={p.stack}
+                                             src={p.src}
+                                             alt={p.alt}
+                                             key={index}/>
+                                );
+                            })}
+                        </S.ProjectsContainer>
+                    </FlexWrapper>
+                </Container>
+            </Fade>
         </S.StyledProjects>
     );
 };

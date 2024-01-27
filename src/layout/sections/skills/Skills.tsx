@@ -5,6 +5,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Skill} from "./Skill";
 import {Container} from "../../../components/Container";
 import {S} from "./Skills_Styles";
+import {Fade} from "react-awesome-reveal";
 
 const skillsData = [
     {
@@ -64,14 +65,14 @@ export const Skills: React.FC = () => {
                     <SecondTitle title={"My Tech Stack"}/>
                     <MainDescription description={"Technologies I’ve been working with recently"}/>
                     <S.SkillsContainer>
-
-                        {skillsData.map((s, index) => {
-                            return <Skill iconId={s.iconID}
-                                          title={s.title}
-                                          viewBox={s.viewBox}
-                                          key={index}/>
-                        })}
-
+                        <Fade cascade={true} damping={0.07}>
+                            {skillsData.map((s, index) => {
+                                return <Skill iconId={s.iconID}
+                                              title={s.title}
+                                              viewBox={s.viewBox}
+                                              key={index}/>
+                            })}
+                        </Fade>
                     </S.SkillsContainer>
                 </FlexWrapper>
             </Container>
