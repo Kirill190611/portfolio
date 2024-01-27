@@ -65,12 +65,12 @@ const TabMenuLink = styled.button<{active?: boolean}>`
 
     &:hover::after {
         width: 100%;
-        transition: 0.5s;
+        transition: ${Theme.animation.transition};
     }
     
     &:hover {
         transform: translateY(-4px);
-        transition: 0.5s;
+        transition: ${Theme.animation.transition};
     }
 `
 

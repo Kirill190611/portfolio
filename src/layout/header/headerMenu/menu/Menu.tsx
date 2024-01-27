@@ -1,9 +1,6 @@
 import React from 'react';
 import {S} from "../HeaderMenu_Styles"
 
-
-
-
 const items = [
     {
         title: "Home",

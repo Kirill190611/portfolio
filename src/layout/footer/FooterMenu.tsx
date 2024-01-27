@@ -1,13 +1,39 @@
 import React from 'react';
 import {S} from "./Footer_Styles";
 
-export const FooterMenu: React.FC<{menuItems: Array<string>}> = (props: {menuItems: Array<string>}) => {
+const items = [
+    {
+        title: "Home",
+        href: "home",
+    },
+    {
+        title: "About",
+        href: "about",
+    },
+    {
+        title: "TechStack",
+        href: "tech",
+    },
+    {
+        title: "Projects",
+        href: "projects",
+    },
+    {
+        title: "Contact",
+        href: "contact",
+    },
+]
+export const FooterMenu: React.FC = () => {
     return (
         <S.FooterMenu>
             <S.FooterMenuList>
-                {props.menuItems.map((item,index)=>{
+                {items.map((item,index)=>{
                     return <S.FooterMenuItem key={index}>
-                        <S.FooterMenuLink href={"#"}>{item}</S.FooterMenuLink>
+                        <S.FooterMenuLink to={item.href}
+                                          smooth={true}
+                                          spy={true}>
+                            {item.title}
+                        </S.FooterMenuLink>
                     </S.FooterMenuItem>
                 })}
             </S.FooterMenuList>

@@ -9,7 +9,6 @@ import {FooterSocial} from "./FooterSocial";
 import {FooterMenu} from "./FooterMenu";
 import {S} from "./Footer_Styles";
 
-const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
 export const Footer: React.FC = () => {
     return (
         <Container>
@@ -24,7 +23,7 @@ export const Footer: React.FC = () => {
                 </S.FooterContactWrapper>
                 <FlexWrapper justify={"space-between"}
                              align={"center"}>
-                    <FooterMenu menuItems={items}/>
+                    <FooterMenu/>
                     <FooterDev/>
                 </FlexWrapper>
             </S.Footer>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {Theme} from "../../styles/Theme.styled";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {font} from "../../styles/Common";
+import {Link} from "react-scroll";
 
 // Footer styles
 
@@ -105,7 +106,7 @@ const FooterMenuItem = styled.li`
     min-width: 95px;
 `
 
-const FooterMenuLink = styled.a`
+const FooterMenuLink = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,15 +116,23 @@ const FooterMenuLink = styled.a`
     color: inherit;
     position: relative;
     
-    &:hover:after {
+    &::after {
         position: absolute;
         content: "";
         display: block;
+        width: 100%;
         border-bottom: 3px solid ${Theme.lightTheme.textAccentColors.primaryAccent};
         bottom: 0;
         left: 0;
         right: 0;
-        transition: 0.2s;
+        transform: scale(0);
+    }
+
+    &:hover {
+        &::after{
+            transform: scale(1);
+            transition: ${Theme.animation.transition};
+        }
     }
 `
 

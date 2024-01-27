@@ -38,12 +38,12 @@ const SocialLink = styled.a`
     align-items: center;
     stroke: ${Theme.lightTheme.textColors.primary};
     fill: ${Theme.lightTheme.textColors.primary};
+    transition: ${Theme.animation.transition};
     
     &:hover {
         stroke: ${Theme.lightTheme.textAccentColors.primaryAccent};
         fill: ${Theme.lightTheme.textAccentColors.primaryAccent};
         transform: translateY(-4px);
-        transition: 0.2s;
     }
 `
 

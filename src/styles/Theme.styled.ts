@@ -28,5 +28,10 @@ export const Theme = {
         tablet: "screen and (max-width: 768px)",
         mobile: "screen and (max-width: 576px)",
         promo: "screen and (max-width: 880px)",
-    }
+    },
+
+    animation: {
+        transition: "0.4s ease-in-out",
+        transitionMenu: "0.7s ease-in-out",
+    },
 }
