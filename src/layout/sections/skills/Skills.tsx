@@ -56,7 +56,7 @@ const skillsData = [
 
 export const Skills: React.FC = () => {
     return (
-        <S.StyledSkills>
+        <S.StyledSkills id={"tech"}>
             <Container>
                 <FlexWrapper direction={"column"}
                              justify={"space-between"}

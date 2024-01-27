@@ -9,7 +9,7 @@ import Tilt from "react-parallax-tilt";
 
 export const Promo: React.FC = () => {
     return (
-        <S.Promo>
+        <S.Promo id={"home"}>
             <Container>
                 <FlexWrapper justify={"space-around"}
                              align={"center"}

@@ -70,7 +70,7 @@ export const GlobalStyled = createGlobalStyle`
     }
     
     section {
-        padding: 25px 0;
+        padding: 100px 0 0;
         
         @media ${Theme.media.tablet} {
             padding: 20px 0;

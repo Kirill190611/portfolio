@@ -104,7 +104,7 @@ export const Projects: React.FC = () => {
     }
 
     return (
-        <S.StyledProjects>
+        <S.StyledProjects id={"projects"}>
             <Container>
                 <FlexWrapper direction={"column"}
                              justify={"space-between"}

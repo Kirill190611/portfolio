@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components";
 import {Theme} from "../../../styles/Theme.styled";
+import {Link} from "react-scroll";
 
 // Styles for Desktop Menu
 
@@ -112,7 +113,7 @@ const MenuItem = styled.li`
     }
 `
 
-const MenuLink = styled.a`
+const MenuLink = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,16 +128,20 @@ const MenuLink = styled.a`
         position: absolute;
         content: "";
         display: block;
-        width: 0;
+        width: 100%;
         border-bottom: 3px solid ${Theme.lightTheme.textAccentColors.primaryAccent};
         bottom: 0;
         left: 0;
         right: 0;
+        transform: scale(0);
     }
     
-    &:hover::after {
-        width: 100%;
-        transition: 0.5s;
+    &:hover, 
+    &.active {
+        &::after {
+            transform: scale(1);
+            transition: 0.5s;
+        }
     }
 `
 
