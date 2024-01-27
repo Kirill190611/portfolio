@@ -30,6 +30,7 @@ const Project = styled.div`
     flex-direction: column;
     max-width: 500px;
     width: 100%;
+    height: 100%;
     background-color: ${Theme.lightTheme.backgroundColors.primary};
     box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;

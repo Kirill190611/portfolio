@@ -13,6 +13,7 @@ import {Container} from "../../../components/Container";
 import {S} from "./Projects_Styles";
 import {TabMenu, TabsStatusType} from "./tabMenu/TabMenu";
 import {Fade} from "react-awesome-reveal";
+import {AnimatePresence, motion} from "framer-motion";
 
 const tabsItems: Array<{ status: TabsStatusType, title: string }> = [
     {
@@ -41,6 +42,7 @@ const projectsData = [
         src: projectImage1,
         alt: "Project 1",
         type: "spa",
+        id: 1,
     },
     {
         title: "Project 2",
@@ -49,6 +51,7 @@ const projectsData = [
         src: projectImage2,
         alt: "Project 2",
         type: "spa",
+        id: 2,
     },
     {
         title: "Project 3",
@@ -57,6 +60,7 @@ const projectsData = [
         src: projectImage3,
         alt: "Project 3",
         type: "react",
+        id: 3,
     },
     {
         title: "Project 4",
@@ -65,6 +69,7 @@ const projectsData = [
         src: projectImage4,
         alt: "Project 4",
         type: "landing",
+        id: 4,
     },
     {
         title: "Project 5",
@@ -73,6 +78,7 @@ const projectsData = [
         src: projectImage5,
         alt: "Project 5",
         type: "spa",
+        id: 5,
     },
     {
         title: "Project 6",
@@ -81,6 +87,7 @@ const projectsData = [
         src: projectImage6,
         alt: "Project 6",
         type: "landing",
+        id: 6,
     },
 ]
 
@@ -117,16 +124,26 @@ export const Projects: React.FC = () => {
                                  changeFilterStatus={changeFilterStatus}
                                  currentFilterStatus={currentFilterStatus}/>
                         <S.ProjectsContainer>
-                            {filteredProjects.map((p, index) => {
-                                return (
-                                    <Project title={p.title}
-                                             description={p.description}
-                                             stack={p.stack}
-                                             src={p.src}
-                                             alt={p.alt}
-                                             key={index}/>
-                                );
-                            })}
+
+                            <AnimatePresence>
+                                {filteredProjects.map((p) => {
+                                    return (
+                                        <motion.div layout={true}
+                                                    initial={{opacity: 0}}
+                                                    animate={{opacity: 1}}
+                                                    exit={{opacity: 0}}
+                                                    key={p.id}>
+                                            <Project title={p.title}
+                                                     description={p.description}
+                                                     stack={p.stack}
+                                                     src={p.src}
+                                                     alt={p.alt}
+                                                     key={p.id}/>
+                                        </motion.div>
+                                    );
+                                })}
+                            </AnimatePresence>
+
                         </S.ProjectsContainer>
                     </FlexWrapper>
                 </Container>
